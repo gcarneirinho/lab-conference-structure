@@ -1,5 +1,6 @@
 @import "./variables";
 @import "components/botao";
+@import "components/bullets";
 
 
 *,
@@ -8,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-
 }
 
 * {
@@ -18,14 +18,22 @@
 
 html {
     font-size: 14px; 
-    color: $color-grey;
-    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     height: 100%;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif;
+    background-color: cadetblue;
+    color: #FFF;
+    line-height: 1rem;
+}
+
+p { 
+    color: #FFF;
+    font-weight: 300;
+    font-size: 25px;
 }
 

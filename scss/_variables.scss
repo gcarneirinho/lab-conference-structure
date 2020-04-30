@@ -1,9 +1,38 @@
-$color-grey: #5a5a5a;
-$color-dark-grey: #363636;
-$color-yellow: #ffeb00;
+// colors 
 
+$blue: #1A2835;
+$blue-opacity: rgba(#1A2835, 0.7);
 
-$color-bg-menu: $color-grey;
+$white-opacity: rgba(#FFFFFF, 0.5); 
+$yellow: #F4B80F;
+$yellow-active: #E6AC0B;
+$gray: #D6D6D6;
+$black: #3A4750;
+$black-active: #484848;
+$red: #FF6363;
+$red-active: #C14D4D;
+$purple: #73478F;
+$green: #00F2CF;
+$orange: #FF8C19;
+
+$bg-gray: #C4C4C4;
+$box-shadow-1: 0px 6px 30px rgba(0, 0, 0, 0.4);
+$box-shadow: 0px 4px 80px rgba(58, 71, 80, 0.3), 0px 4px 40px rgba(58, 71, 80, 0.75), 0px 4px 20px rgba(58, 71, 80, 0.9), 0px 4px 50px rgba(58, 71, 80, 0.8);
+
+// Sizes
+
+$btn-small-width: 200px;
+$btn-small-height: 55px;
+
+$btn-large-width: 280px;
+$btn-large-height: 80px;
+
+$avatar-large: 150px;
+
+// global
+
+$border-radius-button: 6px;
+
 
 .debug-red {
     border: solid 1px red;

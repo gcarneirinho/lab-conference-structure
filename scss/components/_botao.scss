@@ -1,187 +1,100 @@
-// Variables
+// usa d-md-inline-block para responsividade
+.botao {
 
-$black: #4c4c4c;
-$white: #eaeaea;
-$gray: #808080;
-
-$text-arrow-space: 18px;
-$shaft-width: 0px;
-$newshaft-width: 12px;
-$shaft-thickness: 1px;
-$arrow-head-width: 5px;
-$arrow-head-thickness: $shaft-thickness;
-
-
-// The Arrow
-
-.the-arrow {
-  width: $shaft-width;
-  transition: all 0.2s;
- 
-  &.-left {
-    position: absolute;
-    top: 40%;
-    left: 0;
-
-    > .shaft {
-      width: 0;
-      background-color: $black;
-      
-      &:before,
-      &:after {
-        width: 0;
-        background-color: $black;
-      }
-
-      &:before {
-        transform: rotate(0);
-      }
-
-      &:after {
-        transform: rotate(0);
-      }
-    }
-  }
-  
-  &.-right {
-    top: -1px;
-    
-    > .shaft {
-      width: $shaft-width;
-      transition-delay: 0.2s;
-
-      &:before,
-      &:after { 
-        width: $arrow-head-width;
-        transition-delay: 0.3s;
-        transition: all 0.25s;
-      }
-      
-      &:before {
-        transform: rotate(40deg);
-      }
-      
-      &:after {
-        transform: rotate(-40deg);
-      }
-    }
+  &.border-rounded {
+    border-radius: 50px;
   }
 
-  > .shaft {
-    background-color: $black;
-    display: block;
-    height: $shaft-thickness;
-    position: relative;
-    transition: all 0.2s;
-    transition-delay: 0;
-    will-change: transform;
-
-    &:before,
-    &:after {
-      background-color: $black;
-      content: '';
-      display: block;
-      height: $arrow-head-thickness;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transition: all 0.2s;
-      transition-delay: 0;
-    }
-
-    &:before {
-      transform-origin: top right;
-    }
-
-    &:after {
-      transform-origin: bottom right;
-    }
-  }
-}
-
-
-
-// Animated Arrow Button
-
-.animated-arrow {
-  display: inline-block;
-  color: $color-grey;
-  font-size: 10px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
+  margin-top: 10px;
   position: relative;
-  transition: all 0.2s;
-  
+  padding: 33px;
+  text-align: center;
+  min-width: $btn-small-width;
+  font-weight: 600;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: $border-radius-button;
+  background: $gray;
+  transition: all .3s;
+
+  &.dark {
+    color: $blue !important;
+  }
+
+  &.yellow {
+    background: $yellow !important;
+
+    &:hover {
+      background: $yellow-active !important;
+    }
+  }
+
   &:hover {
-    color: black;
-    text-decoration: none;
-    
-    > .the-arrow.-left {
-      > .shaft {
-        width: $newshaft-width;
-        transition-delay: 0.1s;
-        background-color: $color-dark-grey;
+    cursor: pointer;
+    color: $blue;
+  }
 
-        &:before,
-        &:after {
-          width: $arrow-head-width;
-          transition-delay: 0.1s;
-          background-color: $color-dark-grey;
-        }
+  &.entrar {
+    text-align: left;
 
-        &:before {
-          transform: rotate(40deg);
-        }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 26px;
+      width: 16px;
+      height: 24px;
+      transition: all .3s;
 
-        &:after {
-          transform: rotate(-40deg);
-        }
+      // SVG background
+      background-color: white;
+      
+      -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      // background: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+    }
+
+    &.dark {
+      &:after {
+        background-color: $blue !important;
       }
     }
-    
-    > .main {
-      transform: translateX($shaft-width + $text-arrow-space);
-      transform: translateX($newshaft-width + $text-arrow-space);
+
+    &:hover{
       
-      > .the-arrow.-right {
-        > .shaft {
-          width: 0;
-          transform: translateX(200%);
-          transition-delay: 0;
-          
-          &:before,
-          &:after {
-            width: 0;
-            transition-delay: 0;
-            transition: all 0.1s;
-          }
-
-          &:before {
-            transform: rotate(0);
-          }
-
-          &:after {
-            transform: rotate(0);
-          }
-        }
+      &:after {
+        right: 20px;
+        background: $blue;
       }
     }
   }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
   
-  > .main {
-    display: flex;
-    align-items: center;
-    transition: all 0.2s;
-    
-    > .text {
-      margin: 0 $text-arrow-space 0 0;
-      line-height: 1;
-    }
-    
-    > .the-arrow {
-      position: relative;
-    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    display: inline-block !important;
+    // margin-top: 0;
+    padding: 24px;
+    font-size: 15px;
+    width: $btn-small-width;
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    display: inline-block !important;
+    font-size: 21px;
+    line-height: 36px;
+    width: $btn-large-width;
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
   }
 }

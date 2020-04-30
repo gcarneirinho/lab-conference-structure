@@ -6,165 +6,129 @@
   border: solid 1px orange;
 }
 
-.the-arrow {
-  width: 0px;
-  transition: all 0.2s;
-}
-
-.the-arrow.-left {
-  position: absolute;
-  top: 40%;
-  left: 0;
-}
-
-.the-arrow.-left > .shaft {
-  width: 0;
-  background-color: #4c4c4c;
-}
-
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
-  width: 0;
-  background-color: #4c4c4c;
-}
-
-.the-arrow.-left > .shaft:before {
-  transform: rotate(0);
-}
-
-.the-arrow.-left > .shaft:after {
-  transform: rotate(0);
-}
-
-.the-arrow.-right {
-  top: -1px;
-}
-
-.the-arrow.-right > .shaft {
-  width: 0px;
-  transition-delay: 0.2s;
-}
-
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
-  width: 5px;
-  transition-delay: 0.3s;
-  transition: all 0.25s;
-}
-
-.the-arrow.-right > .shaft:before {
-  transform: rotate(40deg);
-}
-
-.the-arrow.-right > .shaft:after {
-  transform: rotate(-40deg);
-}
-
-.the-arrow > .shaft {
-  background-color: #4c4c4c;
-  display: block;
-  height: 1px;
+.botao {
+  margin-top: 10px;
   position: relative;
-  transition: all 0.2s;
-  transition-delay: 0;
-  will-change: transform;
-}
-
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
-  background-color: #4c4c4c;
-  content: '';
-  display: block;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: all 0.2s;
-  transition-delay: 0;
-}
-
-.the-arrow > .shaft:before {
-  transform-origin: top right;
-}
-
-.the-arrow > .shaft:after {
-  transform-origin: bottom right;
-}
-
-.animated-arrow {
-  display: inline-block;
-  color: #5a5a5a;
-  font-size: 10px;
-  font-weight: normal;
+  padding: 33px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: 600;
+  font-size: 21px;
   text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
-  position: relative;
-  transition: all 0.2s;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background: #D6D6D6;
+  transition: all .3s;
+  /* Small devices (landscape phones, 576px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Large devices (desktops, 992px and up) */
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
-.animated-arrow:hover {
-  color: black;
-  text-decoration: none;
+.botao.border-rounded {
+  border-radius: 50px;
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft {
-  width: 12px;
-  transition-delay: 0.1s;
-  background-color: #363636;
+.botao.dark {
+  color: #1A2835 !important;
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-  width: 5px;
-  transition-delay: 0.1s;
-  background-color: #363636;
+.botao.yellow {
+  background: #F4B80F !important;
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:before {
-  transform: rotate(40deg);
+.botao.yellow:hover {
+  background: #E6AC0B !important;
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
-  transform: rotate(-40deg);
+.botao:hover {
+  cursor: pointer;
+  color: #1A2835;
 }
 
-.animated-arrow:hover > .main {
-  transform: translateX(18px);
-  transform: translateX(30px);
+.botao.entrar {
+  text-align: left;
 }
 
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
-  width: 0;
-  transform: translateX(200%);
-  transition-delay: 0;
+.botao.entrar:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 26px;
+  width: 16px;
+  height: 24px;
+  transition: all .3s;
+  background-color: white;
+  -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+  mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
 }
 
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-  width: 0;
-  transition-delay: 0;
-  transition: all 0.1s;
+.botao.entrar.dark:after {
+  background-color: #1A2835 !important;
 }
 
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
-  transform: rotate(0);
+.botao.entrar:hover:after {
+  right: 20px;
+  background: #1A2835;
 }
 
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-  transform: rotate(0);
+@media (min-width: 768px) {
+  .botao {
+    display: inline-block !important;
+    padding: 24px;
+    font-size: 15px;
+    width: 200px;
+  }
 }
 
-.animated-arrow > .main {
+@media (min-width: 992px) {
+  .botao {
+    display: inline-block !important;
+    font-size: 21px;
+    line-height: 36px;
+    width: 280px;
+  }
+}
+
+ul li.bullet {
   display: flex;
+  justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transition: all .3s;
+  background: url(../../assets/svg/icon-plus.svg) no-repeat center center, rgba(26, 40, 53, 0.7);
 }
 
-.animated-arrow > .main > .text {
-  margin: 0 18px 0 0;
-  line-height: 1;
+ul li.bullet:hover {
+  transform: rotate(90deg);
+  background: url(../../assets/svg/icon-plus.svg) no-repeat center center, #1A2835;
+  cursor: pointer;
 }
 
-.animated-arrow > .main > .the-arrow {
-  position: relative;
+/*
+.bullet {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration:.3s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration:.3s;
+  -moz-animation-iteration-count:unset;
+  -moz-animation-timing-function:linear;
 }
 
+@-webkit-keyframes rotate {
+  from {-webkit-transform:rotate(0deg);}
+  to {  -webkit-transform:rotate(90deg);}
+}
+
+@-moz-keyframes rotate {
+  from {-moz-transform:rotate(0deg);}
+  to {  -moz-transform:rotate(90deg);}
+}*/
 *,
 *::after,
 *::before {
@@ -180,12 +144,21 @@
 
 html {
   font-size: 14px;
-  color: #5a5a5a;
-  font-family: 'Poppins', sans-serif;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   height: 100%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: cadetblue;
+  color: #FFF;
+  line-height: 1rem;
+}
+
+p {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 25px;
 }

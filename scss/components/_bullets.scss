@@ -1,0 +1,44 @@
+
+ul {
+  li {
+    &.bullet{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      transition: all .3s;
+      background: url(../../assets/svg/icon-plus.svg) no-repeat center center, $blue-opacity;
+  
+      &:hover {
+        transform: rotate(90deg);
+        background: url(../../assets/svg/icon-plus.svg) no-repeat center center, $blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+/*
+.bullet {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration:.3s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration:.3s;
+  -moz-animation-iteration-count:unset;
+  -moz-animation-timing-function:linear;
+}
+
+@-webkit-keyframes rotate {
+  from {-webkit-transform:rotate(0deg);}
+  to {  -webkit-transform:rotate(90deg);}
+}
+
+@-moz-keyframes rotate {
+  from {-moz-transform:rotate(0deg);}
+  to {  -moz-transform:rotate(90deg);}
+}*/
