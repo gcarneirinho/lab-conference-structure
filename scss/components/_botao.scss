@@ -1,24 +1,29 @@
 // usa d-md-inline-block para responsividade
 .botao {
-
-  &.border-rounded {
-    border-radius: 50px;
-  }
-
   margin-top: 10px;
   position: relative;
-  padding: 33px;
+  padding: 21px 24px 18px 36px;
   text-align: center;
   min-width: $btn-small-width;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 18px;
+  line-height: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .6px;
   border-radius: $border-radius-button;
   background: $gray;
   transition: all .3s;
+  
+  &.b-shadow {
+    box-shadow: $box-shadow;
 
-  &.dark {
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+  }
+
+
+  &.text-blue {
     color: $blue !important;
   }
 
@@ -35,15 +40,15 @@
     color: $blue;
   }
 
-  &.entrar {
+  &.iconed {
     text-align: left;
 
     &:after {
       content: '';
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 26px;
+      top: 51%;
+      transform: translateY(-50%) scale(.8);
+      right: 21px;
       width: 16px;
       height: 24px;
       transition: all .3s;
@@ -56,7 +61,7 @@
       // background: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
     }
 
-    &.dark {
+    &.dark-arrow {
       &:after {
         background-color: $blue !important;
       }
@@ -65,7 +70,8 @@
     &:hover{
       
       &:after {
-        right: 20px;
+        right: 21px;
+        transform: translateY(-50%) scale(.9);
         background: $blue;
       }
     }
@@ -79,18 +85,12 @@
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   @media (min-width: 768px) {  
     display: inline-block !important;
-    // margin-top: 0;
-    padding: 24px;
     font-size: 15px;
     width: $btn-small-width;
   }
   
   /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
-    display: inline-block !important;
-    font-size: 21px;
-    line-height: 36px;
-    width: $btn-large-width;
+  @media (min-width: 992px) {
   }
   
   /* Extra large devices (large desktops, 1200px and up) */

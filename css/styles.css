@@ -9,14 +9,15 @@
 .botao {
   margin-top: 10px;
   position: relative;
-  padding: 33px;
+  padding: 21px 24px 18px 36px;
   text-align: center;
   min-width: 200px;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 18px;
+  line-height: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 6px;
+  letter-spacing: .6px;
+  border-radius: 50px;
   background: #D6D6D6;
   transition: all .3s;
   /* Small devices (landscape phones, 576px and up) */
@@ -25,11 +26,15 @@
   /* Extra large devices (large desktops, 1200px and up) */
 }
 
-.botao.border-rounded {
-  border-radius: 50px;
+.botao.b-shadow {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-.botao.dark {
+.botao.b-shadow:hover {
+  box-shadow: 0px 4px 80px rgba(58, 71, 80, 0.3), 0px 4px 40px rgba(58, 71, 80, 0.75), 0px 4px 20px rgba(58, 71, 80, 0.9), 0px 4px 50px rgba(58, 71, 80, 0.8);
+}
+
+.botao.text-blue {
   color: #1A2835 !important;
 }
 
@@ -46,16 +51,16 @@
   color: #1A2835;
 }
 
-.botao.entrar {
+.botao.iconed {
   text-align: left;
 }
 
-.botao.entrar:after {
+.botao.iconed:after {
   content: '';
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 26px;
+  top: 51%;
+  transform: translateY(-50%) scale(0.8);
+  right: 21px;
   width: 16px;
   height: 24px;
   transition: all .3s;
@@ -64,30 +69,21 @@
   mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
 }
 
-.botao.entrar.dark:after {
+.botao.iconed.dark-arrow:after {
   background-color: #1A2835 !important;
 }
 
-.botao.entrar:hover:after {
-  right: 20px;
+.botao.iconed:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(0.9);
   background: #1A2835;
 }
 
 @media (min-width: 768px) {
   .botao {
     display: inline-block !important;
-    padding: 24px;
     font-size: 15px;
     width: 200px;
-  }
-}
-
-@media (min-width: 992px) {
-  .botao {
-    display: inline-block !important;
-    font-size: 21px;
-    line-height: 36px;
-    width: 280px;
   }
 }
 
@@ -152,9 +148,11 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  background-color: cadetblue;
+  background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.8), rgba(26, 40, 53, 0.8)), url(../images/background.jpg) no-repeat center center;
+  background-size: cover;
   color: #FFF;
   line-height: 1rem;
+  min-height: 100vh;
 }
 
 p {
