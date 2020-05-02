@@ -126,6 +126,8 @@
 }
 
 .botao.iconed.copied:after {
+  transform: translateY(-50%) scale(0.8);
+  transition: all .15s;
   -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
   mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
 }
@@ -137,8 +139,10 @@
 }
 
 .botao.iconed.copy:after {
-  -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
-  mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+  transform: translateY(-50%) scale(0.85);
+  transition: all .15s;
+  -webkit-mask: url(../../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
 }
 
 .botao.iconed.copy:hover:after {
