@@ -54,35 +54,12 @@
   background: #C14D4D !important;
 }
 
-.botao.red.iconed {
-  text-align: left;
-}
-
-.botao.red.iconed:after {
-  -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
-  mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
-}
-
-.botao.red.iconed.confirmar:after {
-  -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
-  mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
-}
-
 .botao.green {
   background: #00F2CF !important;
 }
 
 .botao.green:hover {
   background: #00bfa3 !important;
-}
-
-.botao.green.iconed {
-  text-align: left;
-}
-
-.botao.green.iconed:after {
-  -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
-  mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
 }
 
 .botao:hover {
@@ -104,8 +81,81 @@
   height: 30px;
   transition: all .3s;
   background-color: white;
+}
+
+.botao.iconed.arrow:after {
+  transform: translateY(-50%) scale(0.8);
   -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
   mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+}
+
+.botao.iconed.arrow:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(0.9);
+  background: #1A2835;
+}
+
+.botao.iconed.arrow-back:after {
+  transform: translateY(-50%) scale(-0.8);
+  -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+  mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+}
+
+.botao.iconed.arrow-back:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(-0.9);
+  background: #1A2835;
+}
+
+.botao.iconed.arrow-back-reverse {
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.botao.iconed.arrow-back-reverse:after {
+  left: 14px;
+  transform: translateY(-50%) scale(-0.8);
+  -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+  mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+}
+
+.botao.iconed.arrow-back-reverse:hover:after {
+  left: 14px;
+  transform: translateY(-50%) scale(-0.9);
+  background: #1A2835;
+}
+
+.botao.iconed.copied:after {
+  -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+}
+
+.botao.iconed.copied:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(0.9);
+  background: #1A2835;
+}
+
+.botao.iconed.copy:after {
+  -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+}
+
+.botao.iconed.copy:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(0.9);
+  background: #1A2835;
+}
+
+.botao.iconed.confirm:after {
+  -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+}
+
+.botao.iconed.confirm:hover:after {
+  right: 21px;
+  transform: translateY(-50%) scale(0.9);
+  background: #1A2835;
 }
 
 .botao.iconed.dark-arrow:after {

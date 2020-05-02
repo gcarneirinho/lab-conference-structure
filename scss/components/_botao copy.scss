@@ -1,0 +1,138 @@
+// usa d-md-inline-block para responsividade
+.botao {
+  margin-top: 10px;
+  position: relative;
+  padding: 21px 24px 18px 36px;
+  text-align: center;
+  min-width: $btn-small-width;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  border-radius: $border-radius-button;
+  background: $gray;
+  transition: all .3s;
+  
+  &.b-shadow {
+    box-shadow: $box-shadow;
+
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+  }
+
+
+  &.text-blue {
+    color: $blue !important;
+  }
+
+  &.yellow {
+    background: $yellow !important;
+
+    &:hover {
+      background: $yellow-active !important;
+    }
+  }
+
+  &.red {
+    background: $red !important;
+
+    &:hover {
+      background: $red-active !important;
+    }
+
+    &.iconed {
+      text-align: left;
+      &:after {
+        -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+        mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+      }
+      &.confirmar {
+        &:after {
+          -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+          mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+        }
+      }
+    }
+  }
+
+  &.green {
+    background: $green !important;
+
+    &:hover {
+      background: darken($green, 10%) !important;
+    }
+
+    &.iconed {
+      text-align: left;
+      &:after {
+        -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+        mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $blue;
+  }
+
+  &.iconed {
+    text-align: left;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 51%;
+      transform: translateY(-50%) scale(.8);
+      right: 21px;
+      width: 30px;
+      height: 30px;
+      transition: all .3s;
+
+      // SVG background
+      background-color: white;
+      
+      -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      // background: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+    }
+
+    &.dark-arrow {
+      &:after {
+        background-color: $blue !important;
+      }
+    }
+
+    &:hover{
+      
+      &:after {
+        right: 21px;
+        transform: translateY(-50%) scale(.9);
+        background: $blue;
+      }
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    display: inline-block !important;
+    font-size: 15px;
+    width: $btn-small-width;
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
+  }
+}

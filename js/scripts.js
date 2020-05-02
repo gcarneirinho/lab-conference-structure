@@ -9,7 +9,14 @@ $(function () {
 
   $('#btn-copiar').click(function (event){
     event.preventDefault();
-    $(this).toggleClass('green');
+    // $(this).toggleClass('green copied');
+    var isRed = $(this).hasClass("red");
+
+    if(isRed) {
+      $(this).removeClass('red copy').addClass('green copied');
+    } else {
+      $(this).removeClass('green copied').addClass('red copy');
+    }
 
     var text = $('#btn-copiar').text();
     $('#btn-copiar').text(text == "Copiar" ? "Copiado" : "Copiar");
