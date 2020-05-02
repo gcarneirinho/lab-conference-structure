@@ -46,6 +46,45 @@
   background: #E6AC0B !important;
 }
 
+.botao.red {
+  background: #FF6363 !important;
+}
+
+.botao.red:hover {
+  background: #C14D4D !important;
+}
+
+.botao.red.iconed {
+  text-align: left;
+}
+
+.botao.red.iconed:after {
+  -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+}
+
+.botao.red.iconed.confirmar:after {
+  -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+}
+
+.botao.green {
+  background: #00F2CF !important;
+}
+
+.botao.green:hover {
+  background: #00bfa3 !important;
+}
+
+.botao.green.iconed {
+  text-align: left;
+}
+
+.botao.green.iconed:after {
+  -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+  mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+}
+
 .botao:hover {
   cursor: pointer;
   color: #1A2835;
@@ -61,8 +100,8 @@
   top: 51%;
   transform: translateY(-50%) scale(0.8);
   right: 21px;
-  width: 16px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   transition: all .3s;
   background-color: white;
   -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;

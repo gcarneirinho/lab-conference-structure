@@ -35,6 +35,44 @@
     }
   }
 
+  &.red {
+    background: $red !important;
+
+    &:hover {
+      background: $red-active !important;
+    }
+
+    &.iconed {
+      text-align: left;
+      &:after {
+        -webkit-mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+        mask: url(../../assets/svg/icon-copy.svg) no-repeat center center !important;
+      }
+      &.confirmar {
+        &:after {
+          -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+          mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+        }
+      }
+    }
+  }
+
+  &.green {
+    background: $green !important;
+
+    &:hover {
+      background: darken($green, 10%) !important;
+    }
+
+    &.iconed {
+      text-align: left;
+      &:after {
+        -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+        mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+      }
+    }
+  }
+
   &:hover {
     cursor: pointer;
     color: $blue;
@@ -49,8 +87,8 @@
       top: 51%;
       transform: translateY(-50%) scale(.8);
       right: 21px;
-      width: 16px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       transition: all .3s;
 
       // SVG background
