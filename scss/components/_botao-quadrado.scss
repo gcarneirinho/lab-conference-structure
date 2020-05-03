@@ -1,0 +1,72 @@
+.botao__quadrado {
+  position: relative;
+  width: 220px;
+
+  &--container {
+    position: relative;
+    padding: 4px 4px 30px 4px;
+  }
+  
+
+  &--shape {
+      position: relative;
+      border-radius: 20px;
+      background-color: rgba(#FFF, .6);
+      box-shadow: $box-shadow;
+      width: 210px;
+      height: 210px;
+      overflow: hidden;
+  }
+
+  &--img {
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.2);
+      transition: all .3s ease-in-out;
+     
+  }  
+
+  &--caption {
+      position: absolute;
+      font-size: 12px;
+      bottom: 6px;
+      right: 26px;
+      z-index: 1;
+
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    background: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+    background-size: 25px 25px;
+    background-color: rgba($yellow, .75);
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .5s;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    backface-visibility: hidden;
+  }
+
+  &:hover:after {
+    cursor: pointer;
+    opacity: 1;
+    transform: translate(-50%, -66%);
+  }
+
+  &:hover &--img {
+      cursor: pointer;
+      transform: translate(-50%, -50%) scale(1);
+      filter: blur(1px) brightness(80%);
+  }
+
+}
