@@ -373,12 +373,18 @@ ul li.bullet:hover {
   border-bottom-right-radius: 50px;
 }
 
+.menu__participantes.sala {
+  position: fixed;
+  bottom: 62px;
+  z-index: 100;
+}
+
 .menu__participantes--content p {
   padding-left: 10px;
   font-size: 14px;
   color: #FF6363;
   letter-spacing: .8px;
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 .menu__participantes--content ul {

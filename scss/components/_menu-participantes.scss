@@ -12,13 +12,19 @@
   // top: 20px;
   // z-index: 100;
 
+  &.sala {
+    position: fixed;
+    bottom: 62px;
+    z-index: 100;
+  }
+
   &--content {
     p {
       padding-left: 10px;
       font-size: 14px;
       color: $red;
       letter-spacing: .8px;
-      margin-bottom: 0;
+      margin-bottom: 3px;
     }
 
     ul {
