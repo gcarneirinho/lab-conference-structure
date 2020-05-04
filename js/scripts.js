@@ -13,9 +13,9 @@ $(function () {
     var isRed = $(this).hasClass("red");
 
     if(isRed) {
-      $(this).removeClass('red copy').addClass('green copied');
+      $(this).removeClass('red copy text-blue').addClass('green copied');
     } else {
-      $(this).removeClass('green copied').addClass('red copy');
+      $(this).removeClass('green copied').addClass('red copy text-blue');
     }
 
     var text = $('#btn-copiar').text();

@@ -287,6 +287,65 @@ ul li.bullet:hover {
   filter: blur(1px) brightness(80%);
 }
 
+.v-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.8), rgba(26, 40, 53, 0.8));
+  z-index: 1050;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  outline: 0;
+}
+
+.v-modal-content {
+  flex: 0 0 550px !important;
+  padding-top: 194px;
+  min-height: 780px;
+  background: url(../../images/bg-modal-content.png) no-repeat top center;
+}
+
+.v-modal-content h1 {
+  padding-top: 32px;
+  font-weight: 300;
+  width: 50%;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.v-modal-content h2 {
+  padding-top: 70px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  color: #F4B80F;
+}
+
+.v-modal-content p {
+  padding-top: 74px;
+  padding-bottom: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 23px;
+  letter-spacing: 1px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+.v-modal-content--buttons {
+  padding-top: 40px;
+}
+
+.v-modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 *,
 *::after,
 *::before {
