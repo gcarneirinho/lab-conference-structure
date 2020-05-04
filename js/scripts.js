@@ -40,6 +40,42 @@ $(function () {
    
   })
 
+  $('#btn-participantes-microfone').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
+  $('#btn-participantes-camera').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
+  $('#btn-participantes-seila').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
   $(window).resize(function(){
     // console.log("resized: " + window.outerHeight)
   });

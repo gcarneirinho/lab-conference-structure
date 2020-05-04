@@ -459,16 +459,17 @@ ul li.bullet:hover {
   -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
   -webkit-mask-size: auto 27px !important;
   -webkit-mask-position: 8px 10px !important;
-  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
-  mask-size: 50% 50%;
+  mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  mask-size: auto 27px !important;
   mask-position: 8px 10px !important;
 }
 
 .menu__participantes--content ul li.seila:hover:after {
-  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 27px !important;
-  -webkit-mask-position: 8px 10px !important;
   transform: scale(1.1);
+}
+
+.menu__participantes--content ul li.seila.off:after {
+  background: #ff3030;
 }
 
 body.fake-background {
