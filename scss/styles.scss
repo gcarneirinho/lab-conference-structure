@@ -3,6 +3,7 @@
 @import "components/bullets";
 @import "components/botao-quadrado";
 @import "components/modal";
+@import "./debug";
 
 
 *,
@@ -28,11 +29,12 @@ body {
     height: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to right bottom, $blue-opacity-2, $blue-opacity-2), url(../images/background.jpg) no-repeat center center;
-    background-size: cover;
+    
     color: #FFF;
     line-height: 1rem;
     min-height: 100vh;
+
+    
 }
 
 p { 

@@ -76,8 +76,8 @@
     &.arrow {
       &:after {
       transform: translateY(-50%) scale(.8);
-      -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
-      mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
       }
 
       &:hover{ 
@@ -92,8 +92,8 @@
     &.arrow-back {
       &:after {
       transform: translateY(-50%) scale(-.8);
-      -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
-      mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
+      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
       }
 
       &:hover{ 
@@ -111,8 +111,8 @@
       &:after {
         left: 14px;
         transform: translateY(-50%) scale(-.8);
-        -webkit-mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
-        mask: url(../../assets/svg/icon-arrow-left.svg) no-repeat center center;
+        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
+        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center;
       }
 
       &:hover{ 
@@ -128,8 +128,8 @@
       &:after {
         transform: translateY(-50%) scale(.8);
         transition: all .15s;
-        -webkit-mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
-        mask: url(../../assets/svg/icon-copied.svg) no-repeat center center !important;
+        -webkit-mask: url(../assets/svg/icon-copied.svg) no-repeat center center !important;
+        mask: url(../assets/svg/icon-copied.svg) no-repeat center center !important;
       }
 
       &:hover{ 
@@ -145,8 +145,8 @@
       &:after {
         transform: translateY(-50%) scale(.85);
         transition: all .15s;
-        -webkit-mask: url(../../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
-        mask: url(../../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
+        -webkit-mask: url(../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
+        mask: url(../assets/svg/copy-two-paper-sheets-interface-symbol.svg) no-repeat center center !important;
       }
 
       &:hover{ 
@@ -160,8 +160,8 @@
 
     &.confirm {
       &:after {
-        -webkit-mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
-        mask: url(../../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+        -webkit-mask: url(../assets/svg/icon-confirmar.svg) no-repeat center center !important;
+        mask: url(../assets/svg/icon-confirmar.svg) no-repeat center center !important;
       }
 
       &:hover{ 

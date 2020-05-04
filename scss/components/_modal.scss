@@ -1,21 +1,26 @@
 .v-modal {
-  position: fixed;
+  position: absolute;
+  min-height: 1080px;
+  height: 100vh;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right bottom, $blue-opacity-2, $blue-opacity-2);
+  background: $blue-opacity-2;
+  background-repeat: repeat-y;
   z-index: 1050;
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
   outline: 0;
+  pointer-events: auto;
+  // display:none;
 
   &-content {
     flex: 0 0 550px !important;
     padding-top: 194px;
     min-height: 780px;
-    background: url(../../images/bg-modal-content.png) no-repeat top center;
+    background: url(../images/bg-modal-content.png) no-repeat top center;
 
     h1 {
       padding-top: 32px;
@@ -41,7 +46,7 @@
       padding-bottom: 12px;
       color: rgba(#FFF, .5);
       font-weight: 300;
-      font-size: 23px;
+      font-size: 14px;
       letter-spacing: 1px;
       border-bottom: solid 1px rgba(#FFF, .7);
     }
@@ -51,8 +56,25 @@
     }
   }
 
+  &.hide {
+    visibility: visible;
+    pointer-events: none;
+    opacity: 0;
+  }
   &.show {
+    // display: block;
     visibility: visible;
     opacity: 1;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  .v-modal {
+    &-content {
+      p {
+        font-size: 23px;
+      }
+    }
   }
 }
