@@ -455,7 +455,7 @@ ul li.bullet:hover {
   height: 41px;
   background: #FF6363;
   transform: scale(1);
-  transition: all .1s;
+  transition: all .2s;
   -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
   -webkit-mask-size: auto 27px !important;
   -webkit-mask-position: 8px 10px !important;
