@@ -8,6 +8,10 @@ body {
       background: url(../images/fake-room.png) no-repeat top center;
       background-size: cover;
   }
+  &.bg-fake-image {
+    background: url(../images/interior_360.png) no-repeat top center;
+    background-size: cover;
+}
 }
 
 

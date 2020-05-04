@@ -363,6 +363,114 @@ ul li.bullet:hover {
   }
 }
 
+.menu__participantes {
+  width: 228px;
+  height: 90px;
+  padding-top: 18px;
+  padding-left: 32px;
+  background: rgba(26, 40, 53, 0.7);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.menu__participantes--content p {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #FF6363;
+  letter-spacing: .8px;
+  margin-bottom: 0;
+}
+
+.menu__participantes--content ul {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu__participantes--content ul li {
+  width: 44px;
+  height: 40px;
+}
+
+.menu__participantes--content ul li:hover {
+  cursor: pointer;
+}
+
+.menu__participantes--content ul li.microfone:after {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 41px;
+  background: #FFF;
+  transform: scale(1);
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 33px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  mask-size: auto 33px !important;
+}
+
+.menu__participantes--content ul li.microfone:hover:after {
+  transform: scale(1.1);
+}
+
+.menu__participantes--content ul li.microfone.off:after {
+  background: #FF6363;
+  -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 33px !important;
+}
+
+.menu__participantes--content ul li.camera:after {
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 41px;
+  background: #FFF;
+  transform: scale(1);
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 30px !important;
+  mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  mask-size: auto 30px !important;
+}
+
+.menu__participantes--content ul li.camera:hover:after {
+  transform: scale(1.1);
+}
+
+.menu__participantes--content ul li.camera.off:after {
+  background: #FF6363;
+  -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 35px !important;
+  -webkit-mask-position: 1px 5px !important;
+  mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  mask-size: auto 34px !important;
+}
+
+.menu__participantes--content ul li.seila:after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 41px;
+  background: #FF6363;
+  transform: scale(1);
+  transition: all .1s;
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 27px !important;
+  -webkit-mask-position: 8px 10px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  mask-size: 50% 50%;
+  mask-position: 8px 10px !important;
+}
+
+.menu__participantes--content ul li.seila:hover:after {
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 27px !important;
+  -webkit-mask-position: 8px 10px !important;
+  transform: scale(1.1);
+}
+
 body.fake-background {
   background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.9), rgba(26, 40, 53, 0.9)), url(../images/background.jpg) no-repeat center center;
   background-size: cover;
@@ -370,6 +478,11 @@ body.fake-background {
 
 body.bg-fake-clear {
   background: url(../images/fake-room.png) no-repeat top center;
+  background-size: cover;
+}
+
+body.bg-fake-image {
+  background: url(../images/interior_360.png) no-repeat top center;
   background-size: cover;
 }
 
@@ -412,4 +525,8 @@ p {
   color: #FFF;
   font-weight: 300;
   font-size: 25px;
+}
+
+ul li {
+  list-style: none;
 }

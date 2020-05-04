@@ -3,6 +3,7 @@
 @import "components/bullets";
 @import "components/botao-quadrado";
 @import "components/modal";
+@import "components/menu-participantes";
 @import "./debug";
 
 
@@ -43,3 +44,6 @@ p {
     font-size: 25px;
 }
 
+ul li {
+    list-style: none;
+}
