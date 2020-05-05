@@ -85,6 +85,9 @@ $(function () {
       $('.menu__lateral_sala').addClass('off').removeClass('on');
     } else {
       $('.menu__lateral_sala').removeClass('off').addClass('on');
+      setTimeout(function(){
+        $('.menu__lateral_sala').removeClass('on');
+      }, 500);
     }
   })
 

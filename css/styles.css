@@ -619,8 +619,9 @@ ul li.bullet:hover {
 .menu__lateral_sala--header:after {
   content: '';
   position: absolute;
+  transform: scale(-1);
   top: -30px;
-  left: 0;
+  left: 194px;
   width: 30px;
   height: 30px;
   background: #FFF;
@@ -643,6 +644,7 @@ ul li.bullet:hover {
   font-weight: 600;
   font-style: italic;
   transition: opacity 280ms;
+  visibility: hidden;
   opacity: 0;
   outline: 0;
 }
@@ -661,8 +663,13 @@ ul li.bullet:hover {
   opacity: 1;
 }
 
+.menu__lateral_sala.off .menu__lateral_sala--header:after {
+  transform: scale(1);
+  left: 0;
+}
+
 .menu__lateral_sala.on .menu__lateral_sala--conteudo-detalhes p {
-  visibility: visible;
+  visibility: visible !important;
   opacity: 0;
 }
 
