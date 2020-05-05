@@ -76,6 +76,20 @@ $(function () {
     }
   })
 
+  $('#btn-menu-lateral').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $('.menu__lateral_sala').hasClass("off");
+
+    if(!isOff) {
+      $('.menu__lateral_sala').addClass('off').removeClass('on');
+    } else {
+      $('.menu__lateral_sala').removeClass('off').addClass('on');
+    }
+  })
+
+  
+
   $(window).resize(function(){
     // console.log("resized: " + window.outerHeight)
   });
