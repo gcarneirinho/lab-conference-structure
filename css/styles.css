@@ -364,7 +364,7 @@ ul li.bullet:hover {
 }
 
 .menu__participantes {
-  width: 228px;
+  width: 190px;
   height: 90px;
   padding-top: 18px;
   padding-left: 32px;
@@ -388,7 +388,7 @@ ul li.bullet:hover {
 }
 
 .menu__participantes--content ul {
-  width: 150px;
+  width: 106px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -397,6 +397,38 @@ ul li.bullet:hover {
 .menu__participantes--content ul li {
   width: 44px;
   height: 40px;
+  /*&.seila {
+          &:after {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 41px;
+            background: $red;
+            transform: scale(1);
+            transition: all .2s;
+
+            -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+            -webkit-mask-size: auto 27px !important;
+            -webkit-mask-position: 8px 10px !important;
+
+            mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+            mask-size: auto 27px !important;
+            mask-position: 8px 10px !important;
+          }
+    
+          &:hover{ 
+            &:after {
+              transform: scale(1.1);
+            }
+          }
+
+          &.off {
+            &:after {
+              background: darken($red, 10%);
+            }
+          }
+
+        }*/
 }
 
 .menu__participantes--content ul li:hover {
@@ -452,30 +484,6 @@ ul li.bullet:hover {
   -webkit-mask-position: 1px 5px !important;
   mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
   mask-size: auto 34px !important;
-}
-
-.menu__participantes--content ul li.seila:after {
-  content: '';
-  position: absolute;
-  width: 48px;
-  height: 41px;
-  background: #FF6363;
-  transform: scale(1);
-  transition: all .2s;
-  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 27px !important;
-  -webkit-mask-position: 8px 10px !important;
-  mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-  mask-size: auto 27px !important;
-  mask-position: 8px 10px !important;
-}
-
-.menu__participantes--content ul li.seila:hover:after {
-  transform: scale(1.1);
-}
-
-.menu__participantes--content ul li.seila.off:after {
-  background: #ff3030;
 }
 
 body.fake-background {
