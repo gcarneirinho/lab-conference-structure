@@ -486,6 +486,115 @@ ul li.bullet:hover {
   mask-size: auto 34px !important;
 }
 
+.menu__compartilhar_sala {
+  display: flex;
+  width: auto;
+  height: 90px;
+  background: rgba(26, 40, 53, 0.8);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 26px 14px 24px 30px;
+}
+
+.menu__compartilhar_sala.sala {
+  position: fixed;
+  top: 62px;
+  z-index: 101;
+}
+
+.menu__compartilhar_sala--logo {
+  display: flex;
+  padding-right: 17px;
+  border-right: solid 1px #D6D6D6;
+  height: 41px;
+}
+
+.menu__compartilhar_sala--logo img {
+  width: 32px;
+  height: auto;
+}
+
+.menu__compartilhar_sala--titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 41px;
+  padding: 3px 10px;
+}
+
+.menu__compartilhar_sala--titles p {
+  margin-bottom: 0 !important;
+}
+
+.menu__compartilhar_sala--titles-name {
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 0.1px;
+  color: #FFF;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.menu__compartilhar_sala--titles-room {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.menu__compartilhar_sala--titles-room.yellow {
+  color: #F4B80F;
+}
+
+.menu__compartilhar_sala--titles-room.red {
+  color: #FF6363;
+}
+
+.menu__compartilhar_sala--titles-room.purple {
+  color: #73478F;
+}
+
+.menu__compartilhar_sala--titles-room.orange {
+  color: #FF8C19;
+}
+
+.menu__compartilhar_sala--titles-room.green {
+  color: #00F2CF;
+}
+
+.menu__compartilhar_sala--compartilhar {
+  margin-top: -3px;
+  margin-left: 8px;
+}
+
+.menu__compartilhar_sala--compartilhar a {
+  display: block;
+  background: #F4B80F;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transition: .3s all;
+}
+
+.menu__compartilhar_sala--compartilhar a:after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 26px;
+  background: #FFF;
+  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  mask-size: auto 20px !important;
+  transition: .3s all;
+}
+
+.menu__compartilhar_sala--compartilhar a:hover {
+  box-shadow: 0px 0px 15px rgba(244, 184, 15, 0.5);
+}
+
+.menu__compartilhar_sala--compartilhar a:hover:after {
+  background: #1A2835;
+}
+
 body.fake-background {
   background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.9), rgba(26, 40, 53, 0.9)), url(../images/background.jpg) no-repeat center center;
   background-size: cover;

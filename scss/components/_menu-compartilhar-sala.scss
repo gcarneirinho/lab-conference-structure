@@ -1,0 +1,92 @@
+.menu__compartilhar_sala {
+  display: flex;
+  width: auto;
+  height: 90px;
+  background: $blue-opacity-3;
+  border-top-right-radius: $border-radius-box;
+  border-bottom-right-radius: $border-radius-box;
+  padding: 26px 14px 24px 30px;
+
+  &.sala {
+    position: fixed;
+    top: 62px;
+    z-index: 101;
+  }
+
+  &--logo {
+    display: flex;
+    padding-right: 17px;
+    border-right: solid 1px $gray;
+    height: 41px;
+    img {
+      width: 32px;
+      height: auto;
+    }
+  }
+
+  &--titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 41px;
+    padding: 3px 10px;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &--titles-name {
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 0.1px;
+    color: #FFF;
+    font-weight: 900;
+    font-size:18px;
+  }
+
+  &--titles-room {
+    &.yellow { color: $yellow; }
+    &.red { color: $red; }
+    &.purple { color: $purple; }
+    &.orange { color: $orange; }
+    &.green { color: $green; }
+
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  &--compartilhar {
+    margin-top: -3px;
+    margin-left: 8px;
+    a {
+      display: block;
+      background: $yellow;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      transition: .3s all;
+        
+      &:after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 26px;
+        background: #FFF;
+        -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 16px !important;
+        mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+        mask-size: auto 20px !important;
+        transition: .3s all;
+      }
+
+      &:hover {
+        box-shadow: $box-shadow-yellow;
+        &:after {
+          background: $blue;
+        }
+      }
+
+    }
+  }
+}

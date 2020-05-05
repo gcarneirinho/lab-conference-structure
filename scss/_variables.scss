@@ -3,6 +3,7 @@
 $blue: #1A2835;
 $blue-opacity: rgba(#1A2835, 0.7);
 $blue-opacity-2: rgba(#1A2835, 0.9);
+$blue-opacity-3: rgba(#1A2835, 0.8);
 
 $white-opacity: rgba(#FFFFFF, 0.5); 
 $yellow: #F4B80F;
@@ -20,6 +21,8 @@ $bg-gray: #C4C4C4;
 $box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 $box-shadow-hover: 0px 4px 80px rgba(58, 71, 80, 0.3), 0px 4px 40px rgba(58, 71, 80, 0.75), 0px 4px 20px rgba(58, 71, 80, 0.9), 0px 4px 50px rgba(58, 71, 80, 0.8);
 
+$box-shadow-yellow: 0px 0px 15px rgba(244, 184, 15, 0.5);
+
 // Sizes
 $btn-small-width: 200px;
 $btn-small-height: 55px;
@@ -29,6 +32,7 @@ $avatar-large: 150px;
 // global
 
 $border-radius-button: 50px;
+$border-radius-box: 16px;
 
 
 .debug-red {
