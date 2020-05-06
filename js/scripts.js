@@ -91,6 +91,24 @@ $(function () {
     }
   })
 
+  $('.mainmenu > li').click(function(event) {
+    event.preventDefault();
+
+    var isActive =  $(this).hasClass('active');
+
+    if(!isActive) {
+      $(this).addClass('active');
+      $(this).children('ul.submenu').addClass('off');
+    } else {
+      $(this).removeClass('active');
+      $(this).children('ul.submenu').removeClass('off');
+    }
+
+    $(this).parent().children('li').not(this).removeClass('active');
+    var _ul = $(this).parent().children('li').not(this).children('ul.submenu.off');
+    _ul.removeClass('off')
+  })
+
   
 
   $(window).resize(function(){

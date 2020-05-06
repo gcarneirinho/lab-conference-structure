@@ -694,19 +694,80 @@ ul li.bullet:hover {
 }
 
 .menu__lateral_sala--menu .mainmenu {
+  position: relative;
   margin-left: 20px;
 }
 
-.menu__lateral_sala--menu .mainmenu li {
+.menu__lateral_sala--menu .mainmenu > li {
+  position: relative;
   line-height: 20px;
 }
 
-.menu__lateral_sala--menu .mainmenu li a {
+.menu__lateral_sala--menu .mainmenu > li a {
   color: #FFF;
 }
 
-.menu__lateral_sala--menu .mainmenu .submenu.off {
+.menu__lateral_sala--menu .mainmenu > li:hover:not(.active):after {
+  transform: rotate(90deg);
+}
+
+.menu__lateral_sala--menu .mainmenu > li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  left: -14px;
+  background: #FFF;
+  -webkit-mask: url(../assets/svg/icon-less.svg) no-repeat center center;
+  mask: url(../assets/svg/icon-less.svg) no-repeat center center;
+  -webkit-mask-size: 6px 9px !important;
+  mask-size: 9px 9px !important;
+}
+
+.menu__lateral_sala--menu .mainmenu > li:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  left: -14px;
+  background: #FFF;
+  transform: rotate(0deg) scale(1);
+  transition: transform .2s ease-in-out;
+  -webkit-mask: url(../assets/svg/icon-less.svg) no-repeat center center;
+  mask: url(../assets/svg/icon-less.svg) no-repeat center center;
+  -webkit-mask-size: 6px 9px !important;
+  mask-size: 9px 9px !important;
+}
+
+.menu__lateral_sala--menu .mainmenu > li:not(.active) {
+  transform: rotate(0deg) scale(1);
+}
+
+.menu__lateral_sala--menu .mainmenu > li.active:after {
+  transform: rotate(90deg);
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu {
   display: none;
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu li {
+  padding-left: 10px;
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu li a {
+  color: #F4B80F;
+  transition: all .2s;
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu li a:hover {
+  color: #b58809;
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu.off {
+  display: block;
 }
 
 body.fake-background {
@@ -767,4 +828,8 @@ p {
 
 ul li {
   list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
