@@ -3,7 +3,7 @@
   margin-top: 30px;
   top: 10px;
   right: 0;
-  min-height: 300px;
+  min-height: 352px;
   width: 225px;
   background: $blue-opacity-2;
   border-bottom-left-radius: $border-radius-box;
@@ -20,9 +20,9 @@
     &:after {
       content: '';
       position: absolute;
-      transform: scale(-1);
-      top: -30px;
-      left: 194px;
+      transform: scale(-1.15);
+      top: -29px;
+      left: 196px;
       width: 30px;
       height: 30px;
       background: #FFF;
@@ -36,7 +36,7 @@
     display: flex;
 
     &-detalhes {
-      width: 36px;
+      width: 26px;
 
       p {
         transform: rotate(-90deg) translateX(-82px);
@@ -59,8 +59,13 @@
   
 
   &.off {
+    
     right: -196px;
     background: $opacity-menu;
+    .menu__lateral_sala--conteudo-detalhes {
+      width: 36px;
+    }
+
     .menu__lateral_sala--conteudo {
       &-detalhes {
         p {
@@ -86,6 +91,14 @@
           opacity: 0;
         }
       }
+    }
+  }
+
+  &--plantas {
+    p {
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: -8px;
     }
   }
 }
