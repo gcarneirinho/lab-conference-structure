@@ -693,6 +693,22 @@ ul li.bullet:hover {
   height: 100px;
 }
 
+.menu__lateral_sala--menu .mainmenu {
+  margin-left: 20px;
+}
+
+.menu__lateral_sala--menu .mainmenu li {
+  line-height: 20px;
+}
+
+.menu__lateral_sala--menu .mainmenu li a {
+  color: #FFF;
+}
+
+.menu__lateral_sala--menu .mainmenu .submenu.off {
+  display: none;
+}
+
 body.fake-background {
   background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.9), rgba(26, 40, 53, 0.9)), url(../images/background.jpg) no-repeat center center;
   background-size: cover;

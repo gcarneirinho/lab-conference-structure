@@ -111,4 +111,22 @@
       height: 100px;
     }
   }
+
+  &--menu {
+    .mainmenu {
+      margin-left: 20px;
+      li {
+        line-height: 20px;
+        a {
+          color: #FFF;
+        }
+      }
+
+      .submenu {
+        &.off {
+          display: none;
+        }
+      }
+    }
+  }
 }
