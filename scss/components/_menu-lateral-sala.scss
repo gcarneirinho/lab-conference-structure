@@ -37,6 +37,11 @@
 
     &-detalhes {
       width: 26px;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
 
       p {
         transform: rotate(-90deg) translateX(-82px);
@@ -99,6 +104,11 @@
       font-size: 13px;
       font-weight: bold;
       margin-top: -8px;
+    }
+
+    &-planta {
+      width: 200px;
+      height: 100px;
     }
   }
 }

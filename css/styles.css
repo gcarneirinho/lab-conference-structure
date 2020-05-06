@@ -635,6 +635,11 @@ ul li.bullet:hover {
 
 .menu__lateral_sala--conteudo-detalhes {
   width: 26px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu__lateral_sala--conteudo-detalhes p {
@@ -681,6 +686,11 @@ ul li.bullet:hover {
   font-size: 13px;
   font-weight: bold;
   margin-top: -8px;
+}
+
+.menu__lateral_sala--plantas-planta {
+  width: 200px;
+  height: 100px;
 }
 
 body.fake-background {
