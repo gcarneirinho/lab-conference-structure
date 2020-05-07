@@ -770,6 +770,148 @@ ul li.bullet:hover {
   display: block;
 }
 
+#video-container {
+  position: relative;
+  margin: 0px 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#video-container:hover .video-controller {
+  opacity: 1;
+}
+
+#video-container ul {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#video-container ul li {
+  width: 32px;
+  height: 32px;
+}
+
+#video-container ul li.microfone:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  background: #D6D6D6;
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 15px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  mask-size: auto 15px !important;
+}
+
+#video-container ul li.microfone:hover {
+  cursor: pointer;
+}
+
+#video-container ul li.microfone:hover:after {
+  background: #FFF;
+}
+
+#video-container ul li.microfone.off:after {
+  background: #FF6363;
+  -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 33px !important;
+}
+
+#video-container ul li.camera:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 27px;
+  background: #D6D6D6;
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 15px !important;
+  mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  mask-size: auto 15px !important;
+}
+
+#video-container ul li.camera:hover {
+  cursor: pointer;
+}
+
+#video-container ul li.camera:hover:after {
+  background: #FFF;
+}
+
+#video-container ul li.camera.off:after {
+  background: #FF6363;
+  -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 35px !important;
+  -webkit-mask-position: 1px 5px !important;
+  mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  mask-size: auto 34px !important;
+}
+
+#video-container ul li.exit-room {
+  background: rgba(255, 99, 99, 0.7);
+  transition: all .4s;
+  border-radius: 50%;
+  margin-top: -2px;
+  width: 30px;
+  height: 30px;
+}
+
+#video-container ul li.exit-room:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background: #FFF;
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 12px !important;
+  -webkit-mask-position: 8px 9px !important;
+  mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  mask-size: auto 13px !important;
+}
+
+#video-container ul li.exit-room:hover {
+  cursor: pointer;
+  background: rgba(255, 99, 99, 0.9);
+}
+
+#video-container ul li.exit-room:hover:after {
+  background: #FFF;
+}
+
+#video-container ul li.exit-room.off:after {
+  background: #ff3030;
+}
+
+#video-container .video-controller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 1px transparent;
+  background: #1A2835;
+  visibility: visible;
+  opacity: 0;
+  transition: 250ms opacity ease-in-out;
+  z-index: 1;
+}
+
+#videoElement {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(../../images/video-avatar-150.png) no-repeat center center #1A2835;
+  border: solid 1px #FFF;
+  object-fit: cover;
+}
+
 body.fake-background {
   background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.9), rgba(26, 40, 53, 0.9)), url(../images/background.jpg) no-repeat center center;
   background-size: cover;
