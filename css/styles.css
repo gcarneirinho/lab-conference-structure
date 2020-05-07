@@ -782,6 +782,37 @@ ul li.bullet:hover {
   height: 150px;
 }
 
+.video__container.host {
+  width: 190px;
+  height: 190px;
+}
+
+.video__container.host .video__container--controller {
+  width: 190px;
+  height: 190px;
+}
+
+.video__container.host .video__container--controller ul {
+  width: 190px;
+  height: 190px;
+}
+
+.video__container.host .video__container--titulo {
+  width: 196px;
+  height: 26px;
+}
+
+.video__container.host .video__container--titulo p {
+  font-size: 14px;
+  color: #F4B80F;
+  width: 120px;
+}
+
+.video__container.host #videoElement {
+  width: 190px;
+  height: 190px;
+}
+
 .video__container--controller {
   position: absolute;
   top: 0;
@@ -802,7 +833,7 @@ ul li.bullet:hover {
 }
 
 .video__container--controller ul {
-  width: 120px;
+  width: 150px;
   height: 150px;
   margin: 0 auto;
   display: flex;

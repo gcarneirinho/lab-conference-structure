@@ -38,14 +38,39 @@
   <body class="bg-fake-image">
     <div class="container-fluid">
       <div class="row position-relative">
-        <div class="col-12 mt-5 mb-3 uppercase">Menu webcam</div>
+        <div class="col-12 mt-5 mb-3 uppercase">Menu webcam Host</div>
             <!-- Apenas Debug -->
             <div class="col-12 my-2">
               <button id="btn-video">Abrir camera</button>
               <button id="btn-stop-video">Fechar camera</button>
             </div>
             <!-- Fim debug -->
-              <div id="video-container" class="video__container debug">
+              <div id="video-container" class="video__container host debug">
+                <div class="video__container--controller">
+                  <ul>
+                    <li id="btn-host-microfone" class="microfone"></li>
+                    <li id="btn-host-camera" class="camera"></li>
+                    <li id="btn-host-exit-room" class="exit-room"></li>
+                  </ul>
+                </div>
+                <div class="video__container--titulo">
+                  <p>Valdisnéia dos Santos</p>
+                  <div class="audio">
+                    <img src="./images/fake-audio.png" alt="audio">
+                  </div>
+                </div>
+                <video autoplay="true" id="videoElement">
+                
+                </video>
+              </div>
+        <div class="col-12 mt-5 mb-3 uppercase">Menu webcam Guest</div>
+            <!-- Apenas Debug -->
+            <div class="col-12 my-2">
+              <button id="btn-video">Abrir camera</button>
+              <button id="btn-stop-video">Fechar camera</button>
+            </div>
+            <!-- Fim debug -->
+              <div id="video-container" class="video__container  debug">
                 <div class="video__container--controller">
                   <ul>
                     <li id="btn-host-microfone" class="microfone"></li>

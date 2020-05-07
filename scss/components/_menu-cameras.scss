@@ -10,6 +10,38 @@
 	margin: 0px 20px;
 	width: 150px;
   height: 150px;
+
+  // Alterações de tamanho para o host
+  &.host {
+    width: 190px;
+    height: 190px;
+    .video__container--controller {
+      width: 190px;
+      height: 190px;
+
+      ul {
+        width: 190px;
+        height: 190px;
+      }
+    }
+
+    .video__container--titulo {
+      width: 196px;
+      height: 26px;
+
+      p {
+        font-size: 14px;
+        color: $yellow;
+        width: 120px;
+      }
+    }
+    
+
+    #videoElement { 
+      width: 190px;
+      height: 190px;
+    }
+  }
   
   &--controller {
     position: absolute;
@@ -30,7 +62,7 @@
     }
 
     ul {
-      width: 120px;
+      width: 150px;
       height: 150px;
       margin: 0 auto;
       display: flex;
@@ -185,7 +217,7 @@
     .audio {
 
     }
-  }  
+  }
 
   #videoElement {
     position: absolute;
