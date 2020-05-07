@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Conference Room</title>
+  </head>
+
+  <body class="bg-fake-image">
+    <div class="container-fluid">
+      <div class="row position-relative">
+        <!-- Apenas Debug -->
+        <!-- <div class="col-12 my-2">
+          <button id="btn-video">Abrir camera</button>
+          <button id="btn-stop-video">Fechar camera</button>
+        </div> -->
+        <!-- Fim debug -->
+        <div class="menu__guest">
+          <div id="btn-show-guests-controller" class="menu__guest--show-button active">
+          </div>
+          <div class="menu__guest--container">
+            <div class="row">
+
+              <!-- User -->
+              <div class="col-3 guest">
+                <div id="video-container" class="video__container">
+                  <div class="video__container--controller">
+                    <ul>
+                      <li id="btn-host-microfone" class="microfone"></li>
+                      <li id="btn-host-camera" class="camera"></li>
+                      <li id="btn-host-exit-room" class="exit-room"></li>
+                    </ul>
+                  </div>
+                  <div class="video__container--titulo orange">
+                    <p>Valdisnéia dos Santos</p>
+                    <div class="audio">
+                      <img src="./images/fake-audio.png" alt="audio">
+                    </div>
+                  </div>
+                  <video autoplay="true" id="videoElement">
+                  
+                  </video>
+                </div>
+              </div>
+              <!-- Fim User -->
+              <!-- User -->
+              <div class="col-3 guest">
+                <div id="video-container" class="video__container">
+                  <div class="video__container--controller">
+                    <ul>
+                      <li id="btn-host-microfone" class="microfone"></li>
+                      <li id="btn-host-camera" class="camera"></li>
+                      <li id="btn-host-exit-room" class="exit-room"></li>
+                    </ul>
+                  </div>
+                  <div class="video__container--titulo orange">
+                    <p>Valdisnéia dos Santos</p>
+                    <div class="audio">
+                      <img src="./images/fake-audio.png" alt="audio">
+                    </div>
+                  </div>
+                  <video autoplay="true" id="videoElement">
+                  
+                  </video>
+                </div>
+              </div>
+              <!-- Fim User -->
+              <!-- User -->
+              <div class="col-3 guest">
+                <div id="video-container" class="video__container">
+                  <div class="video__container--controller">
+                    <ul>
+                      <li id="btn-host-microfone" class="microfone"></li>
+                      <li id="btn-host-camera" class="camera"></li>
+                      <li id="btn-host-exit-room" class="exit-room"></li>
+                    </ul>
+                  </div>
+                  <div class="video__container--titulo orange">
+                    <p>Valdisnéia dos Santos</p>
+                    <div class="audio">
+                      <img src="./images/fake-audio.png" alt="audio">
+                    </div>
+                  </div>
+                  <video autoplay="true" id="videoElement">
+                  
+                  </video>
+                </div>
+              </div>
+              <!-- Fim User -->
+              <!-- User -->
+              <div class="col-3 guest">
+                <div id="video-container" class="video__container">
+                  <div class="video__container--controller">
+                    <ul>
+                      <li id="btn-host-microfone" class="microfone"></li>
+                      <li id="btn-host-camera" class="camera"></li>
+                      <li id="btn-host-exit-room" class="exit-room"></li>
+                    </ul>
+                  </div>
+                  <div class="video__container--titulo orange">
+                    <p>Valdisnéia dos Santos</p>
+                    <div class="audio">
+                      <img src="./images/fake-audio.png" alt="audio">
+                    </div>
+                  </div>
+                  <video autoplay="true" id="videoElement">
+                  
+                  </video>
+                </div>
+              </div>
+              <!-- Fim User -->
+              <!-- User -->
+              <div class="col-3 guest">
+                <div id="video-container" class="video__container">
+                  <div class="video__container--controller">
+                    <ul>
+                      <li id="btn-host-microfone" class="microfone"></li>
+                      <li id="btn-host-camera" class="camera"></li>
+                      <li id="btn-host-exit-room" class="exit-room"></li>
+                    </ul>
+                  </div>
+                  <div class="video__container--titulo orange">
+                    <p>Valdisnéia dos Santos</p>
+                    <div class="audio">
+                      <img src="./images/fake-audio.png" alt="audio">
+                    </div>
+                  </div>
+                  <video autoplay="true" id="videoElement">
+                  
+                  </video>
+                </div>
+              </div>
+              <!-- Fim User -->
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

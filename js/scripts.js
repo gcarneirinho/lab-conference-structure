@@ -148,6 +148,22 @@ $(function () {
     _ul.removeClass('off')
   });
 
+  $('#btn-show-guests-controller').click(function(event) {
+    event.preventDefault();
+
+    var isActive =  $(this).hasClass('active');
+
+    if(!isActive) {
+      $(this).addClass('active');
+      $('.menu__guest--container').removeClass('off');
+    } else {
+      $(this).removeClass('active');
+      $('.menu__guest--container').addClass('off');
+    }
+  });
+
+  
+
   
   $('#btn-video').click(function(event) {
     event.preventDefault();

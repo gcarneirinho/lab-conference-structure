@@ -770,6 +770,106 @@ ul li.bullet:hover {
   display: block;
 }
 
+.menu__guest {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 960px;
+  height: 210px;
+  overflow: hidden;
+  z-index: 90;
+}
+
+.menu__guest--container {
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  transition: transform .2s ease-out;
+  height: auto;
+}
+
+.menu__guest--container .guest:nth-child(n+5) {
+  margin-top: 60px;
+}
+
+.menu__guest--container .row {
+  min-width: 500px;
+  justify-content: space-between;
+}
+
+.menu__guest--container.off {
+  transform: translateX(-50%) translateY(275px);
+}
+
+.menu__guest--show-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 36px;
+  background: rgba(26, 40, 53, 0.9);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 100;
+}
+
+.menu__guest--show-button:hover {
+  cursor: pointer;
+}
+
+.menu__guest--show-button:hover:before {
+  background: #FFF;
+}
+
+.menu__guest--show-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 41px;
+  background: #D6D6D6;
+  transition: background-color .2s;
+  -webkit-mask: url(../assets/svg/icon-btn-users.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 25px !important;
+  mask: url(../assets/svg/icon-btn-users.svg) no-repeat center center !important;
+  mask-size: auto 25px !important;
+}
+
+.menu__guest--show-button.active:hover:before {
+  background: #FFF;
+}
+
+.menu__guest--show-button.active:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 41px;
+  background: #D6D6D6;
+  transition: background-color .2s;
+  -webkit-mask: url(../assets/svg/icon-arrow-down.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 13px !important;
+  mask: url(../assets/svg/icon-arrow-down.svg) no-repeat center center !important;
+  mask-size: auto 13px !important;
+}
+
+.menu__guest--show-button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
 .video__container {
   /*&.debug {
     .video__container--controller {
