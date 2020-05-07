@@ -770,133 +770,19 @@ ul li.bullet:hover {
   display: block;
 }
 
-#video-container {
+.video__container {
+  /*&.debug {
+    .video__container--controller {
+      opacity: 1;
+    }
+  }*/
   position: relative;
   margin: 0px 20px;
   width: 150px;
   height: 150px;
-  /*&.debug {
-    .video-controller {
-      opacity: 1;
-    }
-  }*/
 }
 
-#video-container:hover .video-controller {
-  opacity: 1;
-}
-
-#video-container ul {
-  width: 120px;
-  height: 150px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#video-container ul li {
-  width: 32px;
-  height: 32px;
-}
-
-#video-container ul li.microfone:after {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 30px;
-  background: #D6D6D6;
-  transition: all .1s;
-  -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 15px !important;
-  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
-  mask-size: auto 15px !important;
-}
-
-#video-container ul li.microfone:hover {
-  cursor: pointer;
-}
-
-#video-container ul li.microfone:hover:after {
-  background: #FFF;
-}
-
-#video-container ul li.microfone.off:after {
-  -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 16px !important;
-  -webkit-mask-position: 10px 8px !important;
-}
-
-#video-container ul li.camera:after {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 27px;
-  background: #D6D6D6;
-  transition: all .1s;
-  -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 15px !important;
-  mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
-  mask-size: auto 15px !important;
-}
-
-#video-container ul li.camera:hover {
-  cursor: pointer;
-}
-
-#video-container ul li.camera:hover:after {
-  background: #FFF;
-}
-
-#video-container ul li.camera.off:after {
-  width: 32px;
-  height: 28px;
-  -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 18px !important;
-  -webkit-mask-position: 6px 5px !important;
-  mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
-  mask-size: auto 22px !important;
-  mask-position: 0px 3px !important;
-}
-
-#video-container ul li.exit-room {
-  background: rgba(255, 99, 99, 0.7);
-  transition: all .4s;
-  border-radius: 50%;
-  margin-top: -2px;
-  width: 30px;
-  height: 30px;
-}
-
-#video-container ul li.exit-room:after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  background: #FFF;
-  transition: all .2s;
-  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 12px !important;
-  -webkit-mask-position: 8px 9px !important;
-  mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-  mask-size: auto 13px !important;
-  mask-position: 8px 10px !important;
-}
-
-#video-container ul li.exit-room:hover {
-  cursor: pointer;
-  background: rgba(255, 99, 99, 0.9);
-}
-
-#video-container ul li.exit-room:hover:after {
-  background: #FFF;
-}
-
-#video-container ul li.exit-room.off {
-  background: rgba(193, 77, 77, 0.8);
-}
-
-#video-container .video-controller {
+.video__container--controller {
   position: absolute;
   top: 0;
   left: 0;
@@ -911,7 +797,166 @@ ul li.bullet:hover {
   z-index: 1;
 }
 
-#videoElement {
+.video__container--controller:hover {
+  opacity: 1;
+}
+
+.video__container--controller ul {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.video__container--controller ul li {
+  width: 32px;
+  height: 32px;
+}
+
+.video__container--controller ul li.microfone:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  background: #D6D6D6;
+  transition: all .1s;
+  -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 15px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+  mask-size: auto 15px !important;
+}
+
+.video__container--controller ul li.microfone:hover {
+  cursor: pointer;
+}
+
+.video__container--controller ul li.microfone:hover:after {
+  background: #FFF;
+}
+
+.video__container--controller ul li.microfone.off:after {
+  -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  -webkit-mask-position: 10px 8px !important;
+}
+
+.video__container--controller ul li.camera:after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 27px;
+  background: #D6D6D6;
+  transition: all .1s;
+  -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 15px !important;
+  mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+  mask-size: auto 15px !important;
+}
+
+.video__container--controller ul li.camera:hover {
+  cursor: pointer;
+}
+
+.video__container--controller ul li.camera:hover:after {
+  background: #FFF;
+}
+
+.video__container--controller ul li.camera.off:after {
+  width: 32px;
+  height: 28px;
+  -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 18px !important;
+  -webkit-mask-position: 6px 5px !important;
+  mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  mask-size: auto 22px !important;
+  mask-position: 0px 3px !important;
+}
+
+.video__container--controller ul li.exit-room {
+  background: rgba(255, 99, 99, 0.7);
+  transition: all .4s;
+  border-radius: 50%;
+  margin-top: -2px;
+  width: 30px;
+  height: 30px;
+}
+
+.video__container--controller ul li.exit-room:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background: #FFF;
+  transition: all .2s;
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 12px !important;
+  -webkit-mask-position: 8px 9px !important;
+  mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
+  mask-size: auto 13px !important;
+  mask-position: 8px 10px !important;
+}
+
+.video__container--controller ul li.exit-room:hover {
+  cursor: pointer;
+  background: rgba(255, 99, 99, 0.9);
+}
+
+.video__container--controller ul li.exit-room:hover:after {
+  background: #FFF;
+}
+
+.video__container--controller ul li.exit-room.off {
+  background: rgba(193, 77, 77, 0.8);
+}
+
+.video__container--titulo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 20px;
+  background: rgba(26, 40, 53, 0.9);
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.video__container--titulo.orange p {
+  color: #FF8C19 !important;
+}
+
+.video__container--titulo.green p {
+  color: #00F2CF !important;
+}
+
+.video__container--titulo.purple p {
+  color: #73478F !important;
+}
+
+.video__container--titulo.red p {
+  color: #FF6363 !important;
+}
+
+.video__container--titulo p {
+  font-size: 11px;
+  font-weight: bold;
+  padding-right: 10px;
+  margin: 0;
+  display: block;
+  width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.video__container #videoElement {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
