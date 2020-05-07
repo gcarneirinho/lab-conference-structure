@@ -9,11 +9,11 @@ ul {
       height: 26px;
       border-radius: 50%;
       transition: all .3s;
-      background: url(../../assets/svg/icon-plus.svg) no-repeat center center, $blue-opacity;
+      background: url(../assets/svg/icon-plus.svg) no-repeat center center, $blue-opacity;
   
       &:hover {
         transform: rotate(90deg);
-        background: url(../../assets/svg/icon-plus.svg) no-repeat center center, $blue;
+        background: url(../assets/svg/icon-plus.svg) no-repeat center center, $blue;
         cursor: pointer;
       }
     }

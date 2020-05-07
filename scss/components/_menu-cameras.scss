@@ -11,6 +11,12 @@
     }
   }
 
+  /*&.debug {
+    .video-controller {
+      opacity: 1;
+    }
+  }*/
+
   ul {
     width: 120px;
     height: 150px;
@@ -29,7 +35,7 @@
           width: 32px;
           height: 30px;
           background: $gray;
-          transition: all .2s;
+          transition: all .1s;
           -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
           -webkit-mask-size: auto 15px !important;
           mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
@@ -45,9 +51,9 @@
 
         &.off {
           &:after {
-            background: $red;
             -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
-            -webkit-mask-size: auto 33px !important;
+            -webkit-mask-size: auto 16px !important;
+            -webkit-mask-position: 10px 8px !important;
           }
         }
 
@@ -60,7 +66,7 @@
           width: 32px;
           height: 27px;
           background: $gray;
-          transition: all .2s;
+          transition: all .1s;
           -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
           -webkit-mask-size: auto 15px !important;
           mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
@@ -76,13 +82,15 @@
 
         &.off {
           &:after {
-            background: $red;
+            width: 32px;
+            height: 28px;
             -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
-            -webkit-mask-size: auto 35px !important;
-            -webkit-mask-position: 1px 5px !important;
+            -webkit-mask-size: auto 18px !important;
+            -webkit-mask-position: 6px 5px !important;
 
             mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
-            mask-size: auto 34px !important;
+            mask-size: auto 22px !important;
+            mask-position: 0px 3px !important;
           }
         }
 
@@ -109,7 +117,7 @@
 
           mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
           mask-size: auto 13px !important;
-          // mask-position: 8px 10px !important;
+          mask-position: 8px 10px !important;
         }
   
         &:hover{ 
@@ -121,8 +129,8 @@
         }
 
         &.off {
+          background: rgba(193, 77, 77, 0.8);
           &:after {
-            background: darken($red, 10%);
           }
         }
 
@@ -149,7 +157,7 @@
 	width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url(../../images/video-avatar-150.png) no-repeat center center $blue;
+  background: url(../images/video-avatar-150.png) no-repeat center center $blue;
   border: solid 1px #FFF;
   object-fit: cover;
 }

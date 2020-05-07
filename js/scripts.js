@@ -76,6 +76,45 @@ $(function () {
     }
   })
 
+  // Video Host
+  $('#btn-host-microfone').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
+  $('#btn-host-camera').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
+  $('#btn-host-exit-room').click(function(event) {
+    event.preventDefault();
+
+    var isOff = $(this).hasClass("off");
+
+    if(!isOff) {
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+    }
+  })
+
+  // btn-host-microfone, btn-host-camera, btn-host-exit-room
+
   $('#btn-menu-lateral').click(function(event) {
     event.preventDefault();
 
