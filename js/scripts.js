@@ -162,6 +162,35 @@ $(function () {
     }
   });
 
+  $('.menu-camera li').click(function(event) {
+    event.preventDefault();
+    console.log("a")
+
+    var isActive =  $(this).hasClass('on');
+
+    var isMic = $(this).hasClass('mic');
+
+    if(isActive) {
+      $(this).addClass('off').removeClass('on');
+
+      if(isMic){
+        $("#img-mic").attr("src","assets/svg/icon-microfone-off.svg");
+      } else {
+        $("#img-cam").attr("src","assets/svg/icon-camera-off.svg");
+      }
+      
+    } else {
+      $(this).removeClass('off').addClass('on');
+      if(isMic){
+        $("#img-mic").attr("src","assets/svg/icon-microfone.svg");
+      } else {
+        $("#img-cam").attr("src","assets/svg/icon-camera.svg");
+      }
+    }
+  });
+
+  
+
   
 
   
