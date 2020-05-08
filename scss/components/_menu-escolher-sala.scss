@@ -1,0 +1,71 @@
+.menu__escolher_sala {
+  display: flex;
+  > div {
+    margin-right: 10px;
+  }
+  &--filtro {
+    position: relative;
+    min-width: 152px;
+    border: solid 1px $blue-sky;
+    background: transparent;
+    transition: all .3s ease;
+    border-radius: 20px;
+
+    p {
+      padding: 8px 10px 6px 28px;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 16px;
+      left: 10px;
+      width: 22px !important;
+      height: 14px !important;
+      background: $blue-sky;
+      transition: all .3s ease;
+      -webkit-mask: url(../assets/svg/icon-underline.svg) no-repeat;
+      -webkit-mask-position: 0px 0px;
+    }
+
+    &.active, &:hover {
+      cursor: pointer;
+      background: $blue-sky;
+
+      &::after {
+        background: #FFF;
+      }
+    }
+
+    &.purple {
+      border-color: $purple;
+      &::after {
+        background: $purple;
+      }
+      &.active, &:hover {
+        background: $purple;
+        &::after {
+          background: #FFF;
+        }
+      }
+    }
+
+    &.yellow {
+      border-color: $yellow;
+      &::after {
+        background: $yellow;
+      }
+      &.active, &:hover {
+        background: $yellow;
+        &::after {
+          background: #FFF;
+        }
+      }
+    }
+  }
+}
