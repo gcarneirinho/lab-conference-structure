@@ -798,7 +798,7 @@ ul li.bullet:hover {
 .menu__escolher_sala--filtro {
   position: relative;
   min-width: 152px;
-  border: solid 1px #00BEFF;
+  border: solid 1px transparent;
   background: transparent;
   transition: all .3s ease;
   border-radius: 20px;
@@ -826,44 +826,48 @@ ul li.bullet:hover {
   -webkit-mask-position: 0px 0px;
 }
 
-.menu__escolher_sala--filtro.active, .menu__escolher_sala--filtro:hover {
+.menu__escolher_sala--filtro:hover {
   cursor: pointer;
+  border: solid 1px #00BEFF;
+}
+
+.menu__escolher_sala--filtro.active {
   background: #00BEFF;
 }
 
-.menu__escolher_sala--filtro.active::after, .menu__escolher_sala--filtro:hover::after {
+.menu__escolher_sala--filtro.active::after {
   background: #FFF;
-}
-
-.menu__escolher_sala--filtro.purple {
-  border-color: #73478F;
 }
 
 .menu__escolher_sala--filtro.purple::after {
   background: #73478F;
 }
 
-.menu__escolher_sala--filtro.purple.active, .menu__escolher_sala--filtro.purple:hover {
+.menu__escolher_sala--filtro.purple:hover {
+  border-color: #73478F;
+}
+
+.menu__escolher_sala--filtro.purple.active {
   background: #73478F;
 }
 
-.menu__escolher_sala--filtro.purple.active::after, .menu__escolher_sala--filtro.purple:hover::after {
+.menu__escolher_sala--filtro.purple.active::after {
   background: #FFF;
-}
-
-.menu__escolher_sala--filtro.yellow {
-  border-color: #F4B80F;
 }
 
 .menu__escolher_sala--filtro.yellow::after {
   background: #F4B80F;
 }
 
-.menu__escolher_sala--filtro.yellow.active, .menu__escolher_sala--filtro.yellow:hover {
+.menu__escolher_sala--filtro.yellow:hover {
+  border-color: #F4B80F;
+}
+
+.menu__escolher_sala--filtro.yellow.active {
   background: #F4B80F;
 }
 
-.menu__escolher_sala--filtro.yellow.active::after, .menu__escolher_sala--filtro.yellow:hover::after {
+.menu__escolher_sala--filtro.yellow.active::after {
   background: #FFF;
 }
 

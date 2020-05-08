@@ -6,7 +6,7 @@
   &--filtro {
     position: relative;
     min-width: 152px;
-    border: solid 1px $blue-sky;
+    border: solid 1px transparent;
     background: transparent;
     transition: all .3s ease;
     border-radius: 20px;
@@ -33,21 +33,26 @@
       -webkit-mask-position: 0px 0px;
     }
 
-    &.active, &:hover {
+    &:hover {
       cursor: pointer;
-      background: $blue-sky;
+      border: solid 1px $blue-sky; 
+    }
 
+    &.active {
+      background: $blue-sky;
       &::after {
         background: #FFF;
       }
     }
 
     &.purple {
-      border-color: $purple;
       &::after {
         background: $purple;
       }
-      &.active, &:hover {
+      &:hover {
+        border-color: $purple; 
+      }
+      &.active {
         background: $purple;
         &::after {
           background: #FFF;
@@ -56,11 +61,13 @@
     }
 
     &.yellow {
-      border-color: $yellow;
       &::after {
         background: $yellow;
       }
-      &.active, &:hover {
+      &:hover {
+        border-color: $yellow; 
+      }
+      &.active {
         background: $yellow;
         &::after {
           background: #FFF;
