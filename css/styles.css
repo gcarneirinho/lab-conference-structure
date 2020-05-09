@@ -6,6 +6,71 @@
   border: solid 1px orange;
 }
 
+.escolha__salas {
+  position: relative;
+}
+
+.escolha__salas--logo {
+  width: 225px;
+  height: 440px;
+  background: rgba(26, 40, 53, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 18px;
+}
+
+.escolha__salas--logo img {
+  width: 84px;
+  height: auto;
+}
+
+.escolha__salas--texto-boas-vindas {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+}
+
+.escolha__salas--texto-boas-vindas .escolha__salas--background-circle {
+  position: absolute;
+  left: 46px;
+  border: solid 1px #F4B80F;
+  border-radius: 50%;
+}
+
+.escolha__salas--texto-boas-vindas .escolha__salas--background-circle img {
+  padding: 54px;
+}
+
+.escolha__salas--texto-boas-vindas .saudacao {
+  position: relative;
+}
+
+.escolha__salas--texto-boas-vindas .saudacao p {
+  color: #D6D6D6;
+  font-size: 60px;
+}
+
+.escolha__salas--texto-boas-vindas .saudacao h1 {
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  font-size: 58px;
+}
+
+.escolha__salas--texto-escolha {
+  margin-top: 84px;
+  padding-bottom: 34px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.escolha__salas--texto-escolha p {
+  font-size: 35px;
+  line-height: 35px;
+  color: #FFF;
+}
+
 .botao {
   margin-top: 10px;
   position: relative;
