@@ -882,10 +882,6 @@ ul li.bullet:hover {
   display: flex;
 }
 
-.menu__escolher_sala > div {
-  margin-right: 10px;
-}
-
 .menu__escolher_sala--filtro {
   position: relative;
   display: inline-block;

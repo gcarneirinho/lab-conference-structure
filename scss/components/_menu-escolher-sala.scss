@@ -1,8 +1,6 @@
 .menu__escolher_sala {
   display: flex;
-  > div {
-    margin-right: 10px;
-  }
+  
   &--filtro {
     position: relative;
     display: inline-block;
