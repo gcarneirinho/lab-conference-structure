@@ -35,7 +35,8 @@
 
 .escolha__salas--texto-boas-vindas .escolha__salas--background-circle {
   position: absolute;
-  left: 46px;
+  top: 94px;
+  left: 54px;
   border: solid 1px #F4B80F;
   border-radius: 50%;
 }
@@ -69,6 +70,23 @@
   font-size: 35px;
   line-height: 35px;
   color: #FFF;
+}
+
+.escolha__salas--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  min-height: 99vh;
+}
+
+.escolha__salas--menu .menu__escolher_sala {
+  width: 90%;
+}
+
+.escolha__salas--menu .container-botoes {
+  display: inline-block;
+  width: 90%;
 }
 
 .botao {
@@ -862,6 +880,8 @@ ul li.bullet:hover {
 
 .menu__escolher_sala--filtro {
   position: relative;
+  display: inline-block;
+  padding-right: 6px;
   min-width: 152px;
   border: solid 1px transparent;
   background: transparent;

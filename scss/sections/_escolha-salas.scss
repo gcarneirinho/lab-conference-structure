@@ -25,7 +25,8 @@
 
     .escolha__salas--background-circle {
       position: absolute;
-      left: 46px;
+      top: 94px;
+      left: 54px;
       border: solid 1px $yellow;
       border-radius: 50%;
   
@@ -59,4 +60,24 @@
     }
     
   }
+
+  &--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+    min-height: 99vh;
+
+    .menu__escolher_sala {
+      width: 90%;
+    }
+
+    .container-botoes {
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+  
 }
+  

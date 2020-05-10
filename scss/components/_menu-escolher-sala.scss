@@ -5,6 +5,8 @@
   }
   &--filtro {
     position: relative;
+    display: inline-block;
+    padding-right: 6px;
     min-width: 152px;
     border: solid 1px transparent;
     background: transparent;
