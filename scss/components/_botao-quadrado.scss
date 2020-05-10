@@ -37,6 +37,18 @@
 
   }
 
+  &.blue {
+    &:after {
+      background-color: rgba($blue-sky, .75);
+    }
+  }
+
+  &.purple {
+    &:after {
+      background-color: rgba($purple, .75);
+    }
+  }
+
   &:after {
     content: '';
     position: absolute;

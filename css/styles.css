@@ -338,6 +338,14 @@ ul li.bullet:hover {
   z-index: 1;
 }
 
+.botao__quadrado.blue:after {
+  background-color: rgba(0, 190, 255, 0.75);
+}
+
+.botao__quadrado.purple:after {
+  background-color: rgba(115, 71, 143, 0.75);
+}
+
 .botao__quadrado:after {
   content: '';
   position: absolute;
