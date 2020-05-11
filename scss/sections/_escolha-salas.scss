@@ -43,13 +43,16 @@
       width: 400px;
       p {
         color: $gray;
-        font-size: 60px;
+        font-size: 50px;
+        margin-bottom: 20px;
       }
 
       h1 {
         font-family: 'Exo', sans-serif;
         font-weight: bold;
-        font-size: 58px;
+        font-size: 44px;
+        max-width: 400px;
+        // line-height: 50px;
       }
     }
   }
@@ -121,6 +124,7 @@
         h1 {
           font-family: 'Exo', sans-serif;
           font-weight: bold;
+          max-width: 500px;
           font-size: 58px;
         }
       }
