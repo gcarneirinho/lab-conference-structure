@@ -33,6 +33,7 @@ html {
 }
 
 body {
+    min-width:400px;
     height: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -41,7 +42,9 @@ body {
     line-height: 1rem;
     min-height: 100vh;
 
-    
+    &.debug {
+        border: solid 2px rgb(231, 161, 161);
+    }
 }
 
 p { 
@@ -59,3 +62,17 @@ a {
         text-decoration: none;
     }
 }
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    body.debug {
+        border: solid 2px rgb(120, 255, 120);
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 1200px) {
+    body.debug {
+        border: solid 2px rgb(109, 109, 255);
+    }
+  }
