@@ -682,6 +682,10 @@ ul li.bullet:hover {
   margin: 0 auto;
 }
 
+.v-modal-content p {
+  font-size: 23px;
+}
+
 .v-modal-content form {
   margin-top: 48px;
 }
@@ -820,13 +824,6 @@ ul li.bullet:hover {
 .v-modal.show {
   visibility: visible;
   opacity: 1;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .v-modal-content p {
-    font-size: 23px;
-  }
 }
 
 .menu__participantes {

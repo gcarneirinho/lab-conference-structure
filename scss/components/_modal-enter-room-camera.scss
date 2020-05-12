@@ -41,6 +41,10 @@
       margin: 0 auto;
     }
 
+    p {
+      font-size: 23px;
+    }
+
     form {
       margin-top: 48px;
 
@@ -174,15 +178,12 @@
     visibility: visible;
     opacity: 1;
   }
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-  .v-modal {
-    &-content {
-      p {
-        font-size: 23px;
-      }
-    }
+  @media (min-width: 768px) {
+  }
+  
+  
+  @media (min-width: 1200px) {
   }
 }
+
