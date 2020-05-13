@@ -1,0 +1,52 @@
+#preloader {
+  background-color: $blue-opacity-zero;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  padding-top: 45vh;
+  
+
+  .spinner-border {
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  &.on-enter {
+    animation-name: animationIn;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.01, 0.01, 0.14, 0.94);
+    animation-fill-mode: forwards;
+  }
+
+  &.on-leave {
+    animation-name: animationOut;
+    animation-duration: .2s;
+    animation-timing-function: cubic-bezier(0.01, 0.01, 0.14, 0.94);
+    animation-fill-mode: forwards;
+
+    .spinner-border {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes animationIn {
+  0% {
+    background-color: $blue-opacity-zero;
+  }
+
+  100% {
+    background-color: $blue-opacity-2;
+  }
+}
+
+@keyframes animationOut {
+  0% {
+    background-color: $blue-opacity-2;
+  }
+
+  100% {
+    background-color: $blue-opacity-zero;
+  }
+}

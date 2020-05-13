@@ -230,6 +230,29 @@ $(function () {
     // console.log("resized: " + window.outerHeight)
   });*/
 
+  function appendLoader() {
+    let loader = `<div id="preloader" class="d-flex justify-content-center on-enter">
+    <div class="spinner-border text-warning" style="width: 5rem; height: 5rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    </div>`;
+    document.querySelector('.container-fluid').insertAdjacentHTML('beforebegin', loader)
+  }
+
+  $('.btn-toggle-debug').click(function(event) {
+    event.preventDefault();
+
+    var isActive =  $('#preloader').hasClass('on-enter');
+
+    if(isActive) {
+      $('#preloader').removeClass('on-enter').addClass('on-leave');
+    } else {
+      $('#preloader').removeClass('on-leave').addClass('on-enter');
+    }
+  })
+  
+  appendLoader();
+
 
 
 });

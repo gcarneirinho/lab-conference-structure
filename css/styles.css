@@ -1651,6 +1651,56 @@ ul li.bullet:hover {
   object-fit: cover;
 }
 
+#preloader {
+  background-color: rgba(26, 40, 53, 0);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  padding-top: 45vh;
+}
+
+#preloader .spinner-border {
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+#preloader.on-enter {
+  animation-name: animationIn;
+  animation-duration: .5s;
+  animation-timing-function: cubic-bezier(0.01, 0.01, 0.14, 0.94);
+  animation-fill-mode: forwards;
+}
+
+#preloader.on-leave {
+  animation-name: animationOut;
+  animation-duration: .2s;
+  animation-timing-function: cubic-bezier(0.01, 0.01, 0.14, 0.94);
+  animation-fill-mode: forwards;
+}
+
+#preloader.on-leave .spinner-border {
+  opacity: 0;
+}
+
+@keyframes animationIn {
+  0% {
+    background-color: rgba(26, 40, 53, 0);
+  }
+  100% {
+    background-color: rgba(26, 40, 53, 0.9);
+  }
+}
+
+@keyframes animationOut {
+  0% {
+    background-color: rgba(26, 40, 53, 0.9);
+  }
+  100% {
+    background-color: rgba(26, 40, 53, 0);
+  }
+}
+
 body.fake-background {
   background: linear-gradient(to right bottom, rgba(26, 40, 53, 0.9), rgba(26, 40, 53, 0.9)), url(../images/background.jpg) no-repeat center center;
   background-size: cover;
@@ -1664,6 +1714,14 @@ body.bg-fake-clear {
 body.bg-fake-image {
   background: url(../images/interior_360.png) no-repeat top center;
   background-size: cover;
+}
+
+body .btn-toggle-debug {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
 }
 
 #open-modal {
