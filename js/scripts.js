@@ -236,7 +236,7 @@ $(function () {
       <span class="sr-only">Loading...</span>
     </div>
     </div>`;
-    document.querySelector('.container-fluid').insertAdjacentHTML('beforebegin', loader)
+    document.querySelector('.container-fluid.preloader').insertAdjacentHTML('beforebegin', loader)
   }
 
   $('.btn-toggle-debug').click(function(event) {
