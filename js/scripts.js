@@ -236,7 +236,13 @@ $(function () {
       <span class="sr-only">Loading...</span>
     </div>
     </div>`;
-    document.querySelector('.container-fluid.preloader').insertAdjacentHTML('beforebegin', loader)
+
+    let cont = document.querySelector('.container-fluid.preloader');
+
+    if(cont) {
+      cont.insertAdjacentHTML('beforebegin', loader)
+    }
+    
   }
 
   $('.btn-toggle-debug').click(function(event) {
@@ -250,8 +256,41 @@ $(function () {
       $('#preloader').removeClass('on-leave').addClass('on-enter');
     }
   })
-  
+
   appendLoader();
+
+  $('#btn-add-user').click(function() {
+    addUserToMenu();
+  });
+
+  function addUserToMenu() {
+    var userContainer = document.querySelector('#add-user');
+
+    let userTemplate = `<div class="guest">
+    <div id="video-container" class="video__container">
+      <div class="video__container--controller">
+        <ul>
+          <li id="btn-host-microfone" class="microfone"></li>
+          <li id="btn-host-camera" class="camera"></li>
+          <li id="btn-host-exit-room" class="exit-room"></li>
+        </ul>
+      </div>
+      <div class="video__container--titulo orange">
+        <p>Valdisnéia dos Santos</p>
+        <div class="audio">
+          <img src="./images/fake-audio.png" alt="audio">
+        </div>
+      </div>
+      <video autoplay="true" id="videoElement">
+      </video>
+    </div>
+  </div>`;
+
+    userContainer.insertAdjacentHTML('afterbegin', userTemplate);
+  }
+
+  
+  
 
 
 
