@@ -115,20 +115,11 @@
     }
   }
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {  
-  
-  }
-  
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   @media (min-width: 768px) {  
     display: inline-block !important;
     font-size: 15px;
     width: $btn-small-width;
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
   }
   
   /* Extra large devices (large desktops, 1200px and up) */

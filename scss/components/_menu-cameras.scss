@@ -133,6 +133,14 @@
       z-index: 2;
     }
   }
+  
+  @media (min-width: 768px) { 
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
+  }
 }
 
 .video__container {
@@ -363,6 +371,14 @@
     background: url(../images/video-avatar-150.png) no-repeat center center $blue;
     border: solid 1px #FFF;
     object-fit: cover;
+  }
+
+  @media (min-width: 768px) { 
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
   }
 }
 

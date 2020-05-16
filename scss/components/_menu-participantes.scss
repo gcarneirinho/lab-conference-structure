@@ -1,6 +1,4 @@
 .menu__participantes {
-  // position: fixed;
-  // position: absolute;
   width: 190px;
   height: 90px;
   padding-top: 18px;
@@ -8,9 +6,6 @@
   background: $blue-opacity;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  // bottom: 62px;
-  // top: 20px;
-  // z-index: 100;
 
   &.sala {
     position: fixed;
@@ -106,43 +101,18 @@
 
         }
 
-        /*&.seila {
-          &:after {
-            content: '';
-            position: absolute;
-            width: 48px;
-            height: 41px;
-            background: $red;
-            transform: scale(1);
-            transition: all .2s;
-
-            -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-            -webkit-mask-size: auto 27px !important;
-            -webkit-mask-position: 8px 10px !important;
-
-            mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-            mask-size: auto 27px !important;
-            mask-position: 8px 10px !important;
-          }
-    
-          &:hover{ 
-            &:after {
-              transform: scale(1.1);
-            }
-          }
-
-          &.off {
-            &:after {
-              background: darken($red, 10%);
-            }
-          }
-
-        }*/
+        
       }
     }
   }
   
+  @media (min-width: 768px) { 
+  }
   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
+  }
 
   
 }

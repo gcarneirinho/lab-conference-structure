@@ -29,6 +29,14 @@
       opacity: 0;
     }
   }
+
+  @media (min-width: 768px) {
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
+  }
 }
 
 @keyframes animationIn {

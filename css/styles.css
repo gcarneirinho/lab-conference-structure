@@ -235,9 +235,7 @@
   border-radius: 50px;
   background: #D6D6D6;
   transition: all .3s;
-  /* Small devices (landscape phones, 576px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-  /* Large devices (desktops, 992px and up) */
   /* Extra large devices (large desktops, 1200px and up) */
 }
 
@@ -577,6 +575,7 @@ ul li.bullet:hover {
   opacity: 0;
   outline: 0;
   pointer-events: auto;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .v-modal-content.compartilhe {
@@ -856,6 +855,7 @@ ul li.bullet:hover {
   background: rgba(26, 40, 53, 0.7);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .menu__participantes.sala {
@@ -882,38 +882,6 @@ ul li.bullet:hover {
 .menu__participantes--content ul li {
   width: 44px;
   height: 40px;
-  /*&.seila {
-          &:after {
-            content: '';
-            position: absolute;
-            width: 48px;
-            height: 41px;
-            background: $red;
-            transform: scale(1);
-            transition: all .2s;
-
-            -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-            -webkit-mask-size: auto 27px !important;
-            -webkit-mask-position: 8px 10px !important;
-
-            mask: url(../assets/svg/icon-seila.svg) no-repeat center center !important;
-            mask-size: auto 27px !important;
-            mask-position: 8px 10px !important;
-          }
-    
-          &:hover{ 
-            &:after {
-              transform: scale(1.1);
-            }
-          }
-
-          &.off {
-            &:after {
-              background: darken($red, 10%);
-            }
-          }
-
-        }*/
 }
 
 .menu__participantes--content ul li:hover {
@@ -979,6 +947,7 @@ ul li.bullet:hover {
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
   padding: 26px 14px 24px 30px;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .menu__compartilhar_sala.sala {
@@ -1082,7 +1051,6 @@ ul li.bullet:hover {
 
 .menu__escolher_sala {
   display: flex;
-  /* Small devices (landscape phones, 576px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Extra large devices (large desktops, 1200px and up) */
 }
@@ -1182,6 +1150,7 @@ ul li.bullet:hover {
   background: rgba(26, 40, 53, 0.9);
   border-bottom-left-radius: 18px;
   transition: all .2s;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .menu__lateral_sala--header {
@@ -1356,6 +1325,7 @@ ul li.bullet:hover {
   height: 210px;
   overflow: hidden;
   z-index: 90;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .menu__guest--container {
@@ -1504,6 +1474,7 @@ ul li.bullet:hover {
   margin: 0px 20px;
   width: 150px;
   height: 150px;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 .video__container.host {
@@ -1727,6 +1698,7 @@ ul li.bullet:hover {
   height: 100vh;
   vertical-align: middle;
   padding-top: 45vh;
+  /* Extra large devices (large desktops, 1200px and up) */
 }
 
 #preloader .spinner-border {

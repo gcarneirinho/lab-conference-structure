@@ -87,15 +87,23 @@
       padding-top: 42px;
     }
 
-  &.hide {
-    visibility: visible;
-    pointer-events: none;
-    opacity: 0;
+    &.hide {
+      visibility: visible;
+      pointer-events: none;
+      opacity: 0;
+    }
+    &.show {
+      // display: block;
+      visibility: visible;
+      opacity: 1;
+    } 
   }
-  &.show {
-    // display: block;
-    visibility: visible;
-    opacity: 1;
+
+  @media (min-width: 768px) {  
   }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      
   }
 }
