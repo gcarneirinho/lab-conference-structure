@@ -221,6 +221,396 @@
   }
 }
 
+.login__usuario {
+  position: relative;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Large devices (desktops, 992px and up) */
+}
+
+.login__usuario--logo {
+  width: 100%;
+  height: 140px;
+  background: rgba(26, 40, 53, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 18px;
+}
+
+.login__usuario--logo img {
+  width: 84px;
+  height: auto;
+}
+
+.login__usuario--titulo-sala {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__usuario--titulo-sala > * {
+  padding: 8px 0px;
+}
+
+.login__usuario--titulo-sala div:first-child {
+  position: relative;
+  padding-top: 10px;
+}
+
+.login__usuario--titulo-sala div:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #D6D6D6;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 8px;
+}
+
+.login__usuario--titulo-sala h1 {
+  font-family: 'Exo' sans-serif;
+  color: #D6D6D6;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.login__usuario--titulo-sala p {
+  color: #F4B80F;
+  font-size: 30px;
+}
+
+.login__usuario--texto-boas-vindas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+}
+
+.login__usuario--texto-boas-vindas .saudacao {
+  position: relative;
+  padding-left: 30px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.login__usuario--texto-boas-vindas .saudacao h1 {
+  margin-top: 80px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  max-width: 400px;
+  text-align: center;
+  color: #FFF;
+}
+
+.login__usuario--texto-boas-vindas .saudacao p {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login__usuario--texto-boas-vindas .formulario {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login__usuario--texto-boas-vindas .formulario form {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input {
+  margin-bottom: 20px;
+  height: 60px;
+  padding: 4px 8px;
+  font-size: 20px;
+  font-weight: 310;
+  color: rgba(214, 214, 214, 0.4);
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(214, 214, 214, 0.6);
+  transition: all .2s ease;
+  outline: none;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input::placeholder {
+  color: rgba(214, 214, 214, 0.4);
+  transition: all .2s ease;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:-ms-input-placeholder {
+  color: rgba(214, 214, 214, 0.4);
+  transition: all .2s ease;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input::-ms-input-placeholder {
+  color: rgba(214, 214, 214, 0.4);
+  transition: all .2s ease;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:focus {
+  color: #FFF;
+  border-bottom: solid 1px #FFF;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:focus::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:focus:-moz-placeholder {
+  color: #FFF;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:focus:focus::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+.login__usuario--texto-boas-vindas .formulario form input:focus:focus:-moz-placeholder {
+  color: #FFF;
+}
+
+.login__usuario--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .login__usuario--logo {
+    position: relative;
+    width: 225px;
+    height: 410px;
+  }
+  .login__usuario--titulo-sala {
+    position: relative;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    transform: rotate(270deg);
+  }
+  .login__usuario--titulo-sala h1 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 63px;
+  }
+  .login__usuario--titulo-sala p {
+    color: #F4B80F;
+    font-size: 40px;
+    min-width: 350px;
+    padding-top: 28px;
+    padding-left: 40px;
+  }
+  .login__usuario--texto-boas-vindas {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 620px;
+  }
+  .login__usuario--texto-boas-vindas::before {
+    position: absolute;
+    content: '';
+    width: 376px;
+    height: 700px;
+    background: #3A4750;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: -1;
+  }
+  .login__usuario--texto-boas-vindas .saudacao {
+    position: relative;
+    padding-left: 0;
+    width: 400px;
+  }
+  .login__usuario--texto-boas-vindas .saudacao h1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    max-width: 500px;
+    font-size: 54px;
+  }
+  .login__usuario--texto-boas-vindas .saudacao p {
+    margin-top: 30px;
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .login__usuario--texto-boas-vindas .formulario {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .login__usuario--texto-boas-vindas .formulario form {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input {
+    margin-bottom: 20px;
+    height: 80px;
+    padding: 4px 8px;
+    font-size: 20px;
+    font-weight: 310;
+    color: rgba(214, 214, 214, 0.4);
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px rgba(214, 214, 214, 0.6);
+    transition: all .2s ease;
+    outline: none;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input::placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:-ms-input-placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input::-ms-input-placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus {
+    color: #FFF;
+    border-bottom: solid 1px #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:-moz-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:focus::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:focus:-moz-placeholder {
+    color: #FFF;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login__usuario--logo {
+    width: 225px;
+    height: 610px;
+  }
+  .login__usuario--logo img {
+    margin-top: 50px;
+    width: 75px;
+  }
+  .login__usuario--texto-boas-vindas {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 700px;
+  }
+  .login__usuario--texto-boas-vindas::before {
+    position: absolute;
+    content: '';
+    width: 454px;
+    height: 720px;
+    background: rgba(58, 71, 80, 0.75);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: -1;
+  }
+  .login__usuario--texto-boas-vindas .saudacao {
+    position: relative;
+    padding-left: 0;
+    width: 600px;
+  }
+  .login__usuario--texto-boas-vindas .saudacao h1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    max-width: 500px;
+    font-size: 54px;
+    text-align: left;
+  }
+  .login__usuario--texto-boas-vindas .saudacao p {
+    margin-top: 20px;
+    color: #D6D6D6;
+    font-size: 27px;
+    width: 360px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .login__usuario--texto-boas-vindas .formulario {
+    width: 360px;
+    margin: 0 auto;
+    height: 450px;
+  }
+  .login__usuario--texto-boas-vindas .formulario form {
+    position: relative;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+  }
+  .login__usuario--texto-boas-vindas .formulario form .botao {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input {
+    margin-bottom: 20px;
+    height: 80px;
+    padding: 4px 8px;
+    font-size: 20px;
+    font-weight: 310;
+    color: rgba(214, 214, 214, 0.4);
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px rgba(214, 214, 214, 0.6);
+    transition: all .2s ease;
+    outline: none;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input::placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:-ms-input-placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input::-ms-input-placeholder {
+    color: rgba(214, 214, 214, 0.4);
+    transition: all .2s ease;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus {
+    color: #FFF;
+    border-bottom: solid 1px #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:-moz-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:focus::-webkit-input-placeholder {
+    color: #FFF;
+  }
+  .login__usuario--texto-boas-vindas .formulario form input:focus:focus:-moz-placeholder {
+    color: #FFF;
+  }
+}
+
 .botao {
   margin-top: 10px;
   position: relative;
