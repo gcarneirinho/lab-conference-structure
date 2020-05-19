@@ -1094,6 +1094,60 @@ ul li.bullet:hover {
   mask-size: auto 22px !important;
 }
 
+.botao__redondo.arrow-down a {
+  transform: rotate(90deg);
+}
+
+.botao__redondo.arrow-down a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.arrow-down.large a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 22px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 22px !important;
+}
+
+.botao__redondo.arrow-up a {
+  transform: rotate(270deg);
+}
+
+.botao__redondo.arrow-up a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.arrow-up.large a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 22px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 22px !important;
+}
+
+.botao__redondo.arrow-right a {
+  transform: rotate(180deg);
+}
+
+.botao__redondo.arrow-right a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.arrow-right.large a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 22px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 22px !important;
+}
+
 .botao__redondo.light-hover a:hover:after {
   background: rgba(255, 255, 255, 0.5);
 }
