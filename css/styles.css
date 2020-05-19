@@ -954,13 +954,6 @@ ul li.bullet:hover {
   height: 46px;
 }
 
-.botao__redondo.large a:after {
-  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 22px !important;
-  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
-  mask-size: auto 22px !important;
-}
-
 .botao__redondo.red a {
   background: #FF6363;
 }
@@ -1022,13 +1015,23 @@ ul li.bullet:hover {
 }
 
 .botao__redondo.microfone-off a:after {
+  background: url(../assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
+  background-size: auto 18px !important;
+}
+
+.botao__redondo.microfone-off.large a:after {
+  background: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+  background-size: auto 22px !important;
+}
+
+.botao__redondo.microfone-solid-off a:after {
   -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
   -webkit-mask-size: auto 18px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
   mask-size: auto 18px !important;
 }
 
-.botao__redondo.microfone-off.large a:after {
+.botao__redondo.microfone-solid-off.large a:after {
   -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
   -webkit-mask-size: auto 22px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
@@ -1053,7 +1056,7 @@ ul li.bullet:hover {
   -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
   -webkit-mask-size: auto 18px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
-  mask-size: auto 16px !important;
+  mask-size: auto 18px !important;
 }
 
 .botao__redondo.camera-off.large a:after {
@@ -1061,6 +1064,38 @@ ul li.bullet:hover {
   -webkit-mask-size: auto 22px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
   mask-size: auto 22px !important;
+}
+
+.botao__redondo.leave-room a:after {
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
+  -webkit-mask-size: auto 14px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat 9px center !important;
+  mask-size: auto 14px !important;
+}
+
+.botao__redondo.leave-room.large a:after {
+  -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
+  -webkit-mask-size: auto 20px !important;
+  mask: url(../assets/svg/icon-microfone.svg) no-repeat 10px center !important;
+  mask-size: auto 20px !important;
+}
+
+.botao__redondo.arrow-left a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.arrow-left.large a:after {
+  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 22px !important;
+  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+  mask-size: auto 22px !important;
+}
+
+.botao__redondo.light-hover a:hover:after {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .botao__redondo a {
@@ -1078,10 +1113,6 @@ ul li.bullet:hover {
   width: inherit;
   height: inherit;
   background: #FFF;
-  -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
-  -webkit-mask-size: auto 16px !important;
-  mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
-  mask-size: auto 16px !important;
   transition: .3s all;
 }
 
