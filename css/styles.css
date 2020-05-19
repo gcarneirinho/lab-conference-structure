@@ -949,6 +949,41 @@ ul li.bullet:hover {
   }
 }
 
+.botao__redondo.large a {
+  width: 46px;
+  height: 46px;
+}
+
+.botao__redondo.red a {
+  background: #FF6363;
+}
+
+.botao__redondo a {
+  display: block;
+  background: rgba(26, 40, 53, 0.7);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: .3s all;
+}
+
+.botao__redondo a:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: #FFF;
+  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  mask-size: auto 20px !important;
+  transition: .3s all;
+}
+
+.botao__redondo a:hover:after {
+  background: #1A2835;
+}
+
 .v-modal {
   position: absolute;
   min-height: 1080px;
@@ -2160,6 +2195,17 @@ body .btn-toggle-debug {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.container-icons-debug * > * {
+  margin-right: 10px;
+}
+
+.titulo-debug {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 14px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 *,

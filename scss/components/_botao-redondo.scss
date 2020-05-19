@@ -1,0 +1,48 @@
+.botao__redondo {
+
+  &.large {
+    a {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  // Colors 
+
+  &.red {
+    a {
+      background: $red;
+    }
+  }
+
+  a {
+    display: block;
+    background: $blue-opacity;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: .3s all;
+       
+    &:after { 
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background: #FFF;
+      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      -webkit-mask-size: auto 16px !important;
+      mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      mask-size: auto 20px !important;
+      transition: .3s all;
+    }
+
+    &:hover {
+      // box-shadow: $box-shadow-yellow;
+
+      // Change icon color
+      &:after {
+        background: $blue;
+      }
+    }
+  }
+}
