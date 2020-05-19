@@ -9,12 +9,39 @@
 
   // Colors 
 
-  &.red {
-    a {
-      background: $red;
-    }
+  &.red a { background: $red; }
+  &.yellow a { background: $yellow; }
+  &.green a { background: $green; }
+  &.white a { background: #FFF; }
+  &.blue a { background: $blue-sky; }
+  &.orange a { background: $orange; }
+
+  // Change icon color tp dark mode
+  &.icon-dark {
+    a:after { background: $blue }
+    a:hover:after { background: lighten($blue, 20%) }
   }
 
+  // Icons
+  &.compartilhar {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
+      -webkit-mask-size: auto 16px !important;
+      mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      mask-size: auto 16px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
+        -webkit-mask-size: auto 20px !important;
+        mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+        mask-size: auto 20px !important;
+      }
+    }
+  }
+ 
   a {
     display: block;
     background: $blue-opacity;
@@ -29,10 +56,10 @@
       width: inherit;
       height: inherit;
       background: #FFF;
-      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
       -webkit-mask-size: auto 16px !important;
       mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
-      mask-size: auto 20px !important;
+      mask-size: auto 16px !important;
       transition: .3s all;
     }
 

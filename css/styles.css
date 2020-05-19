@@ -958,6 +958,48 @@ ul li.bullet:hover {
   background: #FF6363;
 }
 
+.botao__redondo.yellow a {
+  background: #F4B80F;
+}
+
+.botao__redondo.green a {
+  background: #00F2CF;
+}
+
+.botao__redondo.white a {
+  background: #FFF;
+}
+
+.botao__redondo.blue a {
+  background: #00BEFF;
+}
+
+.botao__redondo.orange a {
+  background: #FF8C19;
+}
+
+.botao__redondo.icon-dark a:after {
+  background: #1A2835;
+}
+
+.botao__redondo.icon-dark a:hover:after {
+  background: #3c5c79;
+}
+
+.botao__redondo.compartilhar a:after {
+  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.compartilhar.large a:after {
+  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
+  -webkit-mask-size: auto 20px !important;
+  mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  mask-size: auto 20px !important;
+}
+
 .botao__redondo a {
   display: block;
   background: rgba(26, 40, 53, 0.7);
@@ -973,10 +1015,10 @@ ul li.bullet:hover {
   width: inherit;
   height: inherit;
   background: #FFF;
-  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+  -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
   -webkit-mask-size: auto 16px !important;
   mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
-  mask-size: auto 20px !important;
+  mask-size: auto 16px !important;
   transition: .3s all;
 }
 
