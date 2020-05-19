@@ -4,6 +4,13 @@
     a {
       width: 46px;
       height: 46px;
+
+      &:after {
+        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 22px !important;
+        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        mask-size: auto 22px !important;
+      }
     }
   }
 
@@ -36,7 +43,7 @@
       a:after {
         -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
         -webkit-mask-size: auto 20px !important;
-        mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+        mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
         mask-size: auto 20px !important;
       }
     }
@@ -56,9 +63,9 @@
       width: inherit;
       height: inherit;
       background: #FFF;
-      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
+      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
       transition: .3s all;
     }
