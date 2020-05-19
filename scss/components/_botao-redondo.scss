@@ -48,6 +48,82 @@
       }
     }
   }
+
+  &.microfone {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat 12px center !important;
+      -webkit-mask-size: auto 18px !important;
+      mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+      mask-size: auto 18px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 22px !important;
+        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask-size: auto 22px !important;
+      }
+    }
+  }
+
+  &.microfone-off {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
+      -webkit-mask-size: auto 18px !important;
+      mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+      mask-size: auto 18px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 22px !important;
+        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask-size: auto 22px !important;
+      }
+    }
+  }
+
+  &.camera {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat 8px 9px !important;
+      -webkit-mask-size: auto 16px !important;
+      mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
+      mask-size: auto 16px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 22px !important;
+        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask-size: auto 22px !important;
+      }
+    }
+  }
+
+  &.camera-off {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
+      -webkit-mask-size: auto 18px !important;
+      mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
+      mask-size: auto 16px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 22px !important;
+        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask-size: auto 22px !important;
+      }
+    }
+  }
  
   a {
     display: block;
