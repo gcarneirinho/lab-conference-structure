@@ -1,5 +1,12 @@
 .botao__redondo {
 
+  &.sombra {
+    a {
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+  }
+
   &.large {
     a {
       width: 46px;
@@ -207,18 +214,18 @@
   &.giroscopio {
     a:after {
       -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
-      -webkit-mask-size: auto 16px !important;
+      -webkit-mask-size: auto 22px !important;
       mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
-      mask-size: auto 16px !important;
+      mask-size: auto 20px !important;
     }
 
     // Large
     &.large {
       a:after {
         -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
-        -webkit-mask-size: auto 20px !important;
+        -webkit-mask-size: auto 26px !important;
         mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
-        mask-size: auto 20px !important;
+        mask-size: auto 26px !important;
       }
     }
   }
