@@ -151,7 +151,7 @@
     a:after {
       -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
       -webkit-mask-size: auto 14px !important;
-      mask: url(../assets/svg/icon-microfone.svg) no-repeat 9px center !important;
+      mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
       mask-size: auto 14px !important;
     }
 
@@ -160,7 +160,64 @@
       a:after {
         -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
         -webkit-mask-size: auto 20px !important;
-        mask: url(../assets/svg/icon-microfone.svg) no-repeat 10px center !important;
+        mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
+        mask-size: auto 20px !important;
+      }
+    }
+  }
+
+  &.show-user-mobile {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+      -webkit-mask-size: auto 21px !important;
+      mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat 9px center !important;
+      mask-size: auto 21px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 26px !important;
+        mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+        mask-size: auto 26px !important;
+      }
+    }
+  }
+
+  &.room {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+      -webkit-mask-size: auto 15px !important;
+      mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+      mask-size: auto 15px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 20px !important;
+        mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+        mask-size: auto 20px !important;
+      }
+    }
+  }
+
+  &.giroscopio {
+    a:after {
+      -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+      -webkit-mask-size: auto 16px !important;
+      mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+      mask-size: auto 16px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+        -webkit-mask-size: auto 20px !important;
+        mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
         mask-size: auto 20px !important;
       }
     }

@@ -1103,14 +1103,56 @@ ul li.bullet:hover {
 .botao__redondo.leave-room a:after {
   -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
   -webkit-mask-size: auto 14px !important;
-  mask: url(../assets/svg/icon-microfone.svg) no-repeat 9px center !important;
+  mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
   mask-size: auto 14px !important;
 }
 
 .botao__redondo.leave-room.large a:after {
   -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
   -webkit-mask-size: auto 20px !important;
-  mask: url(../assets/svg/icon-microfone.svg) no-repeat 10px center !important;
+  mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
+  mask-size: auto 20px !important;
+}
+
+.botao__redondo.show-user-mobile a:after {
+  -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 21px !important;
+  mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat 9px center !important;
+  mask-size: auto 21px !important;
+}
+
+.botao__redondo.show-user-mobile.large a:after {
+  -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 26px !important;
+  mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+  mask-size: auto 26px !important;
+}
+
+.botao__redondo.room a:after {
+  -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 15px !important;
+  mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+  mask-size: auto 15px !important;
+}
+
+.botao__redondo.room.large a:after {
+  -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 20px !important;
+  mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+  mask-size: auto 20px !important;
+}
+
+.botao__redondo.giroscopio a:after {
+  -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 16px !important;
+  mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+  mask-size: auto 16px !important;
+}
+
+.botao__redondo.giroscopio.large a:after {
+  -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+  -webkit-mask-size: auto 20px !important;
+  mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
   mask-size: auto 20px !important;
 }
 
