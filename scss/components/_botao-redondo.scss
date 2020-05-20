@@ -1,3 +1,5 @@
+$assetsPath : "../";
+
 .botao__redondo {
   &.sombra {
     a {
@@ -28,7 +30,7 @@
   // Icons
   &.compartilhar {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
       -webkit-mask-size: auto 16px !important;
       mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
@@ -36,9 +38,9 @@
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
         -webkit-mask-size: auto 20px !important;
-        mask: url(../assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
+        mask: url(#{$assetsPath}assets/svg/icon-compartilhar.svg) no-repeat 12px 13px !important;
         mask-size: auto 20px !important;
       }
     }
@@ -46,17 +48,17 @@
 
   &.microfone {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat 12px center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat 12px center !important;
       -webkit-mask-size: auto 18px !important;
-      mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
       mask-size: auto 18px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -64,13 +66,13 @@
 
   &.microfone-off {
     a:after {
-      background: url(../assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
+      background: url(#{$assetsPath}assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
       background-size: auto 18px !important;
     }
     // Large
     &.large {
       a:after {
-        background: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+        background: url(#{$assetsPath}assets/svg/icon-microfone-off.svg) no-repeat center center !important;
         background-size: auto 22px !important;
       }
     }
@@ -78,17 +80,17 @@
 
   &.microfone-solid-off {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-microfone-off.svg) no-repeat 11px center !important;
       -webkit-mask-size: auto 18px !important;
-      mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
       mask-size: auto 18px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-microfone-off.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-microfone-off.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -96,17 +98,17 @@
 
   &.camera {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat 8px 9px !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-camera.svg) no-repeat 8px 9px !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
+      mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
       mask-size: auto 16px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-camera.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-camera.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -114,13 +116,13 @@
 
   &.camera-off {
     a:after {
-      background: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
+      background: url(#{$assetsPath}assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
       background-size: auto 18px !important;
     }
     // Large
     &.large {
       a:after {
-        background: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+        background: url(#{$assetsPath}assets/svg/icon-camera-off.svg) no-repeat center center !important;
         background-size: auto 22px !important;
       }
     }
@@ -128,17 +130,17 @@
 
   &.camera-solid-off {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
       -webkit-mask-size: auto 18px !important;
-      mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
+      mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
       mask-size: auto 18px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-camera-off.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-microfone.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -146,17 +148,17 @@
 
   &.leave-room {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-seila.svg) no-repeat 9px center !important;
       -webkit-mask-size: auto 14px !important;
-      mask: url(../assets/svg/icon-seila.svg) no-repeat 9px center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-seila.svg) no-repeat 9px center !important;
       mask-size: auto 14px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-seila.svg) no-repeat 10px center !important;
         -webkit-mask-size: auto 20px !important;
-        mask: url(../assets/svg/icon-seila.svg) no-repeat 10px center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-seila.svg) no-repeat 10px center !important;
         mask-size: auto 20px !important;
       }
     }
@@ -164,17 +166,17 @@
 
   &.show-user-mobile {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
       -webkit-mask-size: auto 21px !important;
-      mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat 9px center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-show-user-mobile.svg) no-repeat 9px center !important;
       mask-size: auto 21px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
         -webkit-mask-size: auto 26px !important;
-        mask: url(../assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-show-user-mobile.svg) no-repeat center center !important;
         mask-size: auto 26px !important;
       }
     }
@@ -182,17 +184,17 @@
 
   &.room {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-room.svg) no-repeat center center !important;
       -webkit-mask-size: auto 15px !important;
-      mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-room.svg) no-repeat center center !important;
       mask-size: auto 15px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-room.svg) no-repeat center center !important;
         -webkit-mask-size: auto 20px !important;
-        mask: url(../assets/svg/icon-room.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-room.svg) no-repeat center center !important;
         mask-size: auto 20px !important;
       }
     }
@@ -200,17 +202,17 @@
 
   &.giroscopio {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-bussola.svg) no-repeat center center !important;
       -webkit-mask-size: auto 22px !important;
-      mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-bussola.svg) no-repeat center center !important;
       mask-size: auto 20px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-bussola.svg) no-repeat center center !important;
         -webkit-mask-size: auto 26px !important;
-        mask: url(../assets/svg/icon-bussola.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-bussola.svg) no-repeat center center !important;
         mask-size: auto 26px !important;
       }
     }
@@ -218,17 +220,17 @@
 
   &.arrow-left {
     a:after {
-      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -239,17 +241,17 @@
       transform: rotate(90deg);
     }
     a:after {
-      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -260,17 +262,17 @@
       transform: rotate(270deg);
     }
     a:after {
-      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
@@ -281,17 +283,17 @@
       transform: rotate(180deg);
     }
     a:after {
-      -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
     }
     // Large
     &.large {
       a:after {
-        -webkit-mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        -webkit-mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         -webkit-mask-size: auto 22px !important;
-        mask: url(../assets/svg/icon-arrow-left.svg) no-repeat center center !important;
+        mask: url(#{$assetsPath}assets/svg/icon-arrow-left.svg) no-repeat center center !important;
         mask-size: auto 22px !important;
       }
     }
