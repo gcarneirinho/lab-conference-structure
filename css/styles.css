@@ -958,24 +958,48 @@ ul li.bullet:hover {
   background: #FF6363;
 }
 
+.botao__redondo.red a:hover {
+  background: #ff4a4a;
+}
+
 .botao__redondo.yellow a {
   background: #F4B80F;
+}
+
+.botao__redondo.yellow a:hover {
+  background: #dfa70a;
 }
 
 .botao__redondo.green a {
   background: #00F2CF;
 }
 
+.botao__redondo.green a:hover {
+  background: #00d9b9;
+}
+
 .botao__redondo.white a {
   background: #FFF;
+}
+
+.botao__redondo.white a:hover {
+  background: #f2f2f2;
 }
 
 .botao__redondo.blue a {
   background: #00BEFF;
 }
 
+.botao__redondo.blue a:hover {
+  background: #00abe6;
+}
+
 .botao__redondo.orange a {
   background: #FF8C19;
+}
+
+.botao__redondo.orange a:hover {
+  background: #ff7f00;
 }
 
 .botao__redondo.icon-dark a:after {
@@ -1053,13 +1077,23 @@ ul li.bullet:hover {
 }
 
 .botao__redondo.camera-off a:after {
+  background: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
+  background-size: auto 18px !important;
+}
+
+.botao__redondo.camera-off.large a:after {
+  background: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+  background-size: auto 22px !important;
+}
+
+.botao__redondo.camera-solid-off a:after {
   -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
   -webkit-mask-size: auto 18px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat 8px 9px !important;
   mask-size: auto 18px !important;
 }
 
-.botao__redondo.camera-off.large a:after {
+.botao__redondo.camera-solid-off.large a:after {
   -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
   -webkit-mask-size: auto 22px !important;
   mask: url(../assets/svg/icon-microfone.svg) no-repeat center center !important;
@@ -1168,6 +1202,10 @@ ul li.bullet:hover {
   height: inherit;
   background: #FFF;
   transition: .3s all;
+}
+
+.botao__redondo a:hover {
+  background: rgba(9, 14, 19, 0.7);
 }
 
 .botao__redondo a:hover:after {

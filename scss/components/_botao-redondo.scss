@@ -9,13 +9,12 @@
 
   // Colors 
 
-  &.red a { background: $red; }
-  &.yellow a { background: $yellow; }
-  &.green a { background: $green; }
-  &.white a { background: #FFF; }
-  &.blue a { background: $blue-sky; }
-  &.orange a { background: $orange; }
-
+  &.red a { background: $red; &:hover{ background: darken($red, 5%); }}
+  &.yellow a { background: $yellow; &:hover{ background: darken($yellow, 5%); }}
+  &.green a { background: $green; &:hover{ background: darken($green, 5%); }}
+  &.white a { background: #FFF; &:hover{ background: darken(#FFF, 5%); }}
+  &.blue a { background: $blue-sky; &:hover{ background: darken($blue-sky, 5%); }}
+  &.orange a { background: $orange; &:hover{ background: darken($orange, 5%); }}
   // Change icon color tp dark mode
   &.icon-dark {
     a:after { background: $blue }
@@ -115,6 +114,21 @@
   }
 
   &.camera-off {
+    a:after {
+      background: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
+      background-size: auto 18px !important;
+    }
+
+    // Large
+    &.large {
+      a:after {
+        background: url(../assets/svg/icon-camera-off.svg) no-repeat center center !important;
+        background-size: auto 22px !important;
+      }
+    }
+  }
+
+  &.camera-solid-off {
     a:after {
       -webkit-mask: url(../assets/svg/icon-camera-off.svg) no-repeat 8px 9px !important;
       -webkit-mask-size: auto 18px !important;
@@ -267,6 +281,7 @@
 
     &:hover {
       // box-shadow: $box-shadow-yellow;
+      background: darken($blue-opacity, 10%);
 
       // Change icon color
       &:after {
