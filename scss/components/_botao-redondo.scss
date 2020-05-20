@@ -32,7 +32,7 @@ $assetsPath : "../";
     a:after {
       -webkit-mask: url(#{$assetsPath}assets/svg/icon-compartilhar.svg) no-repeat 10px 10px !important;
       -webkit-mask-size: auto 16px !important;
-      mask: url(../assets/svg/icon-compartilhar.svg) no-repeat center center !important;
+      mask: url(#{$assetsPath}assets/svg/icon-compartilhar.svg) no-repeat center center !important;
       mask-size: auto 16px !important;
     }
     // Large
